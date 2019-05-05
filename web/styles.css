@@ -13,7 +13,7 @@ table {
     max-width: 50%;
     margin-left:25%; 
     margin-right:25%;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 td, th {
@@ -25,4 +25,36 @@ td, th {
 
 tr:nth-child(even) {
     background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a4a4a4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    font-family: sans-serif;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #6b6969;
+}
+
+.active {
+    background-color: #6b6969;
 }

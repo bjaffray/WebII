@@ -10,11 +10,17 @@
 
 
 <body>
+
+<?php
+
+require("navBar.php");
+
+?>
   
 <div id="table">
   <table>
         <tr>
-          <th> Assignment week number </th>
+          <th> Assignment </th>
           <th> Link to the assignment </th>
         </tr>
 
