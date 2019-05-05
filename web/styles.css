@@ -1,7 +1,4 @@
 
-
-
-
 body {
     background-image: url("websitewallpaper.png");
     background-repeat: no-repeat;
@@ -9,20 +6,18 @@ body {
     color: whitesmoke;
 }
 
-div {
-    align-content: center;
-}
-
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     max-width: 50%;
-
+    margin-left:25%; 
+    margin-right:25%;
 }
 
 td, th {
     border: 1px solid #6b6969;
+    background-color: black;
     text-align: left;
     padding: 8px;
 }
