@@ -1,7 +1,27 @@
 
 
 body {
-    background-image: url("websitewallpaper.png");
+    background-image: url("/websitewallpaper.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
+}
+
+div {
+    align-content: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #6b6969;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: grey;
+}
