@@ -14,8 +14,8 @@
 <div id="table">
   <table>
         <tr>
-          <th> Week </th>
-          <th> Link </th>
+          <th> Assignment week number </th>
+          <th> Link to the assignment </th>
         </tr>
 
         <tr>
@@ -70,14 +70,14 @@
         <tr>
           <td> Week 8: </td>
           <td> 
-            <a href="assign8/assign.html"> Here </a> 
+            <a href="underCon.php"> Here </a>   
           </td>
         </tr>
 
         <tr>
           <td> Week 9: </td>
           <td> 
-            <a href="directory.html"> Here </a> 
+            <a href="underCon.php"> Here </a>   
           </td>
         </tr>
 
