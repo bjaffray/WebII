@@ -27,84 +27,84 @@ require("navBar.php");
         <tr>
           <td> Week 1: </td>
           <td> 
-          <a href="underCon.php"> Here </a> 
+          <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 2: </td>
           <td> 
-          <a href="underCon.php"> Here </a> 
+          <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 3: </td>
           <td> 
-            <a href="underCon.php"> Here </a> 
+            <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 4: </td>
           <td> 
-            <a href="underCon.php"> Here </a> 
+            <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 5: </td>
           <td> 
-            <a href="underCon.php"> Here </a> 
+            <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 6: </td>
           <td> 
-            <a href="underCon.php"> Here </a> 
+            <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 7: </td>
           <td> 
-            <a href="underCon.php"> Here </a>   
+            <a href="underCon.html"> Here </a>   
           </td>
         </tr>
 
         <tr>
           <td> Week 8: </td>
           <td> 
-            <a href="underCon.php"> Here </a>   
+            <a href="underCon.html"> Here </a>   
           </td>
         </tr>
 
         <tr>
           <td> Week 9: </td>
           <td> 
-            <a href="underCon.php"> Here </a>   
+            <a href="underCon.html"> Here </a>   
           </td>
         </tr>
 
         <tr>
           <td> Week 10: </td>
           <td> 
-            <a href="underCon.php"> Here </a> 
+            <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 11: </td>
           <td> 
-            <a href="underCon.php"> Here </a> 
+            <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 12: </td>
           <td> 
-            <a href="underCon.php"> Here </a> 
+            <a href="underCon.html"> Here </a> 
           </td>
         </tr>
 
