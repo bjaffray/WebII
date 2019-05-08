@@ -27,7 +27,7 @@ require("navBar.php");
         <tr>
           <td> Week 1: </td>
           <td> 
-          <p>Didn't have anything</p>
+          <a> No Link </a> 
           </td>
         </tr>
 
