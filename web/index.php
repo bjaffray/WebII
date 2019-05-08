@@ -27,21 +27,21 @@ require("navBar.php");
         <tr>
           <td> Week 1: </td>
           <td> 
-          <a href="underCon.html"> Here </a> 
+          <p>Didn't have anything</p>
           </td>
         </tr>
 
         <tr>
           <td> Week 2: </td>
           <td> 
-          <a href="underCon.html"> Here </a> 
+          <a href="index.php"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 3: </td>
           <td> 
-            <a href="underCon.html"> Here </a> 
+            <a href="/week3/shop.php"> Here </a> 
           </td>
         </tr>
 
