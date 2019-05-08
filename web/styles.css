@@ -59,3 +59,7 @@ li a:hover:not(.active) {
 .active {
     background-color: #6b6969;
 }
+
+.w3-allerta {
+    font-family: "Allerta Stencil", Sans-serif;
+}

@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
   <title>Personal Homepage</title>
 </head>
 
 
-<body>
+<body class="w3-allerta">
 
 <?php
 
