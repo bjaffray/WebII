@@ -28,7 +28,7 @@
 <div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
     <?php   
     echo "Size: " . sizeof($_SESSION['store_items']);
-    echo "First: " . $_SESSION['store_items'][1] . "<br>";
+    echo "First: " . $_SESSION['store_items'] . "<br>";
 
 
     foreach ($_SESSION['store_items'] as $value) {
