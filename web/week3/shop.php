@@ -66,7 +66,7 @@ require("banner.php");
             <th></th>
             <th>Description</th>
             <th>Price (Gold)</th>
-            <th>Add to Cart</th>
+            <th>Items in Cart</th>
         </tr>
         <?php
     //  foreach ($_SESSION['store_items'] as $key => $to_print) {
