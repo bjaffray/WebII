@@ -14,6 +14,11 @@
         }
 
 
+        public function printInfo() {
+            echo "Name: " . $this->name . " | Price: " . $this->price . " | Description: " . $this->desc . " | File Path: " . $this->filep . "<br>";
+        }
+
+
         public function addToCart() {
             if ($this->in_cart)
                 $this->in_cart = false;
