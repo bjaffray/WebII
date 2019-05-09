@@ -33,8 +33,7 @@
     
     function checkInfo(address, name)
     {
-        var str = str.concat(name, "CBox");
-        var temp = document.getElementById(str);
+        var temp = document.getElementById(name + "CBox");
 
         if (!temp.checked) {
             <?php $_SESSION['store_items'][address]->in_cart = true; ?>
