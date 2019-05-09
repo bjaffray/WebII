@@ -26,11 +26,12 @@
 
 
 <div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
-    <?php    
-    foreach ($_SESSION['store_items'] as $value) {
-        echo "Item ";
-        $value->printInfo();
-    }
+    <?php   
+    echo "Size: " . sizeof($_SESSION['store_items']);
+    // foreach ($_SESSION['store_items'] as $value) {
+    //     echo "Item ";
+    //     $value->printInfo();
+    // }
     ?>
 </div>
 
