@@ -29,7 +29,7 @@
     fclose($myfile);
 
     foreach ($items as $toprint) {
-        $toprint->printInfo();
+        echo $toprint->name . "\n";
     }
 
 
