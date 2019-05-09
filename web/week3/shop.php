@@ -31,9 +31,9 @@
 
     <script>
     
-    function checkInfo(address, name)
+    function checkInfo(address)
     {
-        var temp = document.getElementById(name + "CBox");
+        var temp = document.getElementById(address);
 
         if (!temp.checked) {
             <?php $_SESSION['store_items'][address]->in_cart = true; ?>
@@ -70,12 +70,12 @@ require("banner.php");
         </tr>
         <?php
         foreach ($_SESSION['store_items'] as $key => $to_print) {
-            echo "<tr onclick=\"checkInfo(" . $key . ", " . $to_print->name . ")\">";
+            echo "<tr onclick=\"checkInfo($key)\">";
             echo "<td>" . $to_print->name;
             echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">";
             echo "<td>" . $to_print->desc;
             echo "<td>" . $to_print->price;
-            echo "<td><input type=\"checkbox\" name=\"cart\" id=\"" . $to_print->name . "CBox\"";
+            echo "<td><input type=\"checkbox\" name=\"cart\" id=\"$key\"";
             if ($to_print->in_cart) echo "checked\">";
             echo "<tr/>";
         }
