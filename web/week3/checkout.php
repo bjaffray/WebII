@@ -32,10 +32,10 @@
 
 
 
-<br> <br>
+<br> <br> <br> <br>
 <div class="w3-bar footer">
-    <button name="tocart" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" style="width:50%" onclick="window.location='cart.php';">Go back to Cart</button>
-    <button name="toconf" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" style="width:50%" onclick="window.location='confirmation.php';">Submit</button>
+    <button name="tocart" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" style="width:50%" onclick="window.location='cart.php';">Go back to Cart</button>
+    <button name="toconf" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" style="width:50%" onclick="window.location='confirmation.php';">Submit</button>
 </div> 
 </body>
 
