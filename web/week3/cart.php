@@ -35,8 +35,10 @@
 
 <br> <br> <br> <br>
 <div class="w3-bar footer">
-    <button name="toshop" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" style="width:50%" onclick="window.location='shop.php';">Go Back to Shop</button>
-    <button name="tocheckout" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" style="width:50%" onclick="window.location='checkout.php';">Go to Checkout</button>
+    <button name="toshop" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" 
+        style="width:50%" onclick="window.location='shop.php';">Go Back to Shop</button>
+    <button name="tocheckout" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" 
+        style="width:50%" onclick="window.location='checkout.php';">Go to Checkout</button>
 </div> 
 
 </body>
