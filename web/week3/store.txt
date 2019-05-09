@@ -1,0 +1,48 @@
+Items:
+Bottle - 650
+
+Ring of Health - 850
+
+Void Stone - 850
+
+Energy Booster - 900
+
+Vitality Booster - 1100
+
+Point Booster - 1200
+
+Platemail - 1400
+
+Talisman of Evasion - 1400
+
+Hyperstone - 2000
+
+Ultimate Orb - 2150
+
+Demon Edge - 2200
+
+Mystic Staff - 2700
+
+Reaver - 3000
+
+Eaglesong - 3200
+
+Sacred Relic - 3800
+
+Perseverance - 1700
+
+Soul Booster - 3200
+
+Lotus Orb - 4000
+
+Moon Shard - 4000
+
+Bloodstone - 4900
+
+Eye of Skadi - 5500
+
+Scyth of Vyse - 5700
+
+Octarine Core - 5900
+
+Divine Rapier - 6000
