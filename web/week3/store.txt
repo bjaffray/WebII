@@ -1,26 +1,26 @@
 Bottle
 650
-An old bottle that survived the ages, the contents placed inside become enchanted. 
+An old bottle that survived the ages, the contents placed inside become enchanted.
 ./Items/Bottle_(Full)_icon.png
 
 Ring of Health
 850
-A shiny ring found beneath a fat halfling's corpse. 
+A shiny ring found beneath a fat halfling's corpse.
 ./Items/Ring_of_Health_icon.png
 
 Void Stone
 850
-Jewelry that was once used to channel nether realm magic, this ring pulses with energy. 
+Jewelry that was once used to channel nether realm magic, this ring pulses with energy.
 ./Items/Void_Stone_icon.png
 
 Energy Booster
 900
-This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat. 
+This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat.
 ./Items/Energy_Booster_icon.png
 
 Vitality Booster
 1100
-A ruby gemstone that has been passed down through generations of warrior kin. 
+A ruby gemstone that has been passed down through generations of warrior kin.
 ./Items/Vitality_Booster_icon.png
 
 Point Booster
@@ -30,17 +30,17 @@ A perfectly formed amethyst that nourishes body and mind when held.
 
 Platemail
 1400
-Thick metal plates that protect the entire upper body. Avoid dropping on feet. 
+Thick metal plates that protect the entire upper body. Avoid dropping on feet.
 ./Items/Platemail_icon.png
 
 Talisman of Evasion
 1400
-A necklace that allows you to anticipate enemy attacks. 
+A necklace that allows you to anticipate enemy attacks.
 ./Items/Talisman_of_Evasion_icon.png
 
 Hyperstone
 2000
-A mystical, carved stone that boosts the fervor of the holder. 
+A mystical, carved stone that boosts the fervor of the holder.
 ./Items/Hyperstone_icon.png
 
 Ultimate Orb
@@ -55,22 +55,22 @@ One of the oldest weapons forged by the Demon-Smith Abzidian, it killed its make
 
 Mystic Staff
 2700
-Enigmatic staff made of only the most expensive crystals. 
+Enigmatic staff made of only the most expensive crystals.
 ./Items/Mystic_Staff_icon.png
 
 Reaver
 3000
-A massive axe capable of tearing whole mountains down. 
+A massive axe capable of tearing whole mountains down.
 ./Items/Reaver_icon.png
 
 Eaglesong
 3200
-Capturing the majestic call of an eagle, this mystical horn brings limitless dexterity to those who hear it. 
+Capturing the majestic call of an eagle, this mystical horn brings limitless dexterity to those who hear it.
 ./Items/Eaglesong_icon.png
 
 Sacred Relic
 3800
-An ancient weapon that often turns the tides of war. 
+An ancient weapon that often turns the tides of war.
 ./Items/Sacred_Relic_icon.png
 
 Perseverance
@@ -85,35 +85,35 @@ Regain lost courage.
 
 Lotus Orb
 4000
-The jewel at its center still reflects a pale image of its creator. 
+The jewel at its center still reflects a pale image of its creator.
 ./Items/Lotus_Orb_icon.png
 
 Moon Shard
 4000
-Said to be a tear from the lunar goddess Selemene. 
+Said to be a tear from the lunar goddess Selemene.
 ./Items/Moon_Shard_icon.png
 
 Bloodstone
 4900
-The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit. 
+The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit.
 ./Items/Bloodstone_icon.png
 
 Eye of Skadi
 5500
-Extremely rare artifact, guarded by the azure dragons. 
+Extremely rare artifact, guarded by the azure dragons.
 ./Items/Eye_of_Skadi_icon.png
 
 Scyth of Vyse
 5700
-The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi. 
+The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi.
 ./Items/Scythe_of_Vyse_icon.png
 
 Octarine Core
 5900
-At the core of spellcraft are spectrums only the very gifted can sense. 
+At the core of spellcraft are spectrums only the very gifted can sense.
 ./Items/Octarine_Core_icon.png
 
 Divine Rapier
 6000
-So powerful, it cannot have a single owner. 
+So powerful, it cannot have a single owner.
 ./Items/Divine_Rapier_icon.png
