@@ -57,7 +57,7 @@
     <span class="w3-xxxlarge w3-allerta">Welcome to the dota secret shop</span>
 </div> 
 
-<br> <br> <br> <br>
+<br> <br>
 
 <div>
     <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
