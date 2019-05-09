@@ -26,13 +26,14 @@
         array_push($items, $temp);
     }
 
+    $_SESSION['store_items'] = $items;
+
     fclose($myfile);
 
-    foreach ($items as $toprint) {
-        echo $toprint->name . "\n";
+
+    foreach ($_SESSION['store_items'] as $toprint) {
+        echo $toprint->name;
     }
-
-
 ?>
 
 <!DOCTYPE html>
