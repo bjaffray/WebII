@@ -18,7 +18,7 @@
     $items = array();
 
     while(!feof($myfile)) {
-        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile), false);
+        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile), true);
         fgets($myfile);
         array_push($items, $temp);
     }
@@ -58,7 +58,7 @@
             <th></th>
             <th>Description</th>
             <th>Price</th>
-            <th></th>
+            <th>Add to Cart</th>
         </tr>
         <?php
         foreach ($_SESSION['store_items'] as $to_print) {
@@ -70,7 +70,6 @@
             echo "<td><input type=\"checkbox\" name=\"cart\" value=\"" . $to_print->name . "\" ";
             if ($to_print->in_cart) echo "checked";
             echo ">";
-            echo "<tr/>";
         }
         ?>
     </table>
