@@ -60,7 +60,7 @@
 <br> <br> <br> <br>
 
 <div>
-    <table class="w3-table w3-bordered w3-container w3-dark-grey w3-round-xlarge">
+    <table class="w3-table w3-bordered w3-container w3-dark-grey w3-round-xlarge w3-allerta">
         <tr>
             <th>Item</th>
             <th></th>
@@ -80,8 +80,8 @@
             echo "onclick=\"" . $to_print->addToCart() . "\">";
         }
         ?>
-        <input type="button" name="tocart" value="tocart">
     </table>
+    <input type="button" name="tocart" value="Go to Cart">
 </div>
 
 </body>
