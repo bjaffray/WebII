@@ -1,5 +1,7 @@
 <?php
     // Start the session
+    require("Item.php");
+
     session_start();
 ?>
 
