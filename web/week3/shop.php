@@ -12,6 +12,16 @@
             $this->filep = $filep;
             $this->in_cart = $in_cart;
         }
+
+        public function printTblItem() {
+            echo "<tr>";
+            echo "<td>" . $item->name . "<td/>";
+            echo "<td><img src=\"" . $item->filep . "\" alt=\"" . $item->name . "\"><td/>";
+            echo "<td>" . $item->desc . "<td/>";
+            echo "<td>" . $item->price . "<td/>";
+            echo "<td>" . $item->in_cart . "<td/>";
+            echo "<tr/>";
+        }
     }
 
     $items = array();
@@ -49,34 +59,24 @@
 </div> 
 
 
-<table>
-    <tr>
-        <th>Item</th>
-        <th>Pic</th>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Is it in the cart</th>
-    </tr>
-    <?php
-    
-    foreach ($_SESSION['shop_items'] as $item) {
-        echo "<tr>";
-
-        echo "<td>" . $item->name . "<td/>";
-        echo "<td><img src=\"" . $item->filep . "\" alt=\"" . $item->name . "\"><td/>";
-        echo "<td>" . $item->desc . "<td/>";
-        echo "<td>" . $item->price . "<td/>";
-        echo "<td>" . $item->in_cart . "<td/>";
-
-        echo "<tr/>";
-    }
-
-    
-    
-    
-    ?>
-</table>
-
+<div class="w3-container w3-dark-grey w3-round-xlarge">
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Pic</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Is it in the cart</th>
+        </tr>
+        <?php
+        
+        foreach ($_SESSION['shop_items'] as $to_print) {
+            $to_print->printTblItem();
+        }
+        
+        ?>
+    </table>
+</div>
 
 </body>
 
