@@ -6,114 +6,114 @@ desc
 Ring of Health
 850
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Ring_of_Health_icon.png
 
 Void Stone
 850
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Void_Stone_icon.png
 
 Energy Booster
 900
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Energy_Booster_icon.png
 
 Vitality Booster
 1100
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Vitality_Booster_icon.png
 
 Point Booster
 1200
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Point_Booster_icon.png
 
 Platemail
 1400
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Platemail_icon.png
 
 Talisman of Evasion
 1400
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Talisman_of_Evasion_icon.png
 
 Hyperstone
 2000
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Hyperstone_icon.png
 
 Ultimate Orb
 2150
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Ultimate_Orb_icon.png
 
 Demon Edge
 2200
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Demon_Edge_icon.png
 
 Mystic Staff
 2700
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Mystic_Staff_icon.png
 
 Reaver
 3000
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Reaver_icon.png
 
 Eaglesong
 3200
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Eaglesong_icon.png
 
 Sacred Relic
 3800
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Sacred_Relic_icon.png
 
 Perseverance
 1700
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Perseverance_icon.png
 
 Soul Booster
 3200
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Soul_Booster_icon.png
 
 Lotus Orb
 4000
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Lotus_Orb_icon.png
 
 Moon Shard
 4000
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Moon_Shard_icon.png
 
 Bloodstone
 4900
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Bloodstone_icon.png
 
 Eye of Skadi
 5500
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Eye_of_Skadi_icon.png
 
 Scyth of Vyse
 5700
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Eye_of_Skadi_icon.png
 
 Octarine Core
 5900
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Octarine_Core_icon.png
 
 Divine Rapier
 6000
 desc
-./Items/Bottle_(Full)_icon.png
+./Items/Divine_Rapier_icon.png
