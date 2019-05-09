@@ -28,6 +28,24 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
     <title>Shop</title>
+
+    <script>
+    
+    function checkInfo(address, onoff)
+    {
+        var temp = document.getElementById(<?php $_SESSION['store_items'][address]->name; ?> "CBox");
+        if (!onoff) {
+            <?php $_SESSION['store_items'][address]->in_cart = true; ?>
+            temp.checked = true;
+        }
+        else {
+            <?php $_SESSION['store_items'][address]->in_cart = false; ?>
+            temp.checked = false;
+        }
+    }
+    
+    
+    </script>
 </head>
 
 
@@ -50,15 +68,14 @@ require("banner.php");
             <th>Add to Cart</th>
         </tr>
         <?php
-        foreach ($_SESSION['store_items'] as $to_print) {
-            echo "<tr>";
+        foreach ($_SESSION['store_items'] as $key => $to_print) {
+            echo "<tr onclick=\"checkInfo(" . $key . ", " . $to_print->in_cart . ")\">";
             echo "<td>" . $to_print->name;
             echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">";
             echo "<td>" . $to_print->desc;
             echo "<td>" . $to_print->price;
-            echo "<td><input type=\"checkbox\" name=\"cart\" value=\"" . $to_print->name . "\" ";
-            if ($to_print->in_cart) echo "checked";
-            echo "onclick=\"" . $to_print->addToCart() . "\">";   //Get what ever this is working
+            echo "<td><input type=\"checkbox\" name=\"cart\" id=\"" . $to_print->name . "CBox\" ";
+            if ($to_print->in_cart) echo "checked\">";   //Get what ever this is working
         }
         ?>
     </table>
