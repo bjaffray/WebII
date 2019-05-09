@@ -20,17 +20,18 @@
 
 
 <body>
-    
-
 <?php
-require("banner.php");
-
-foreach ($_SESSION['store_items'] as $value) {
-    echo "Item: " . $value->name . "<br>";
-}
-
+    require("banner.php");
 ?>
 
+
+<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
+    <?php    
+    foreach ($_SESSION['store_items'] as $value) {
+        echo "Item: " . $value->name . "<br>";
+    }
+    ?>
+</div>
 
 
 

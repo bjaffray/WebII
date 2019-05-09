@@ -19,6 +19,7 @@
 
 
 <body>
+
 <?php
 require("banner.php");
 ?>
