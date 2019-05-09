@@ -60,7 +60,7 @@
 <br> <br> <br> <br>
 
 <div>
-    <table class="w3-table w3-bordered w3-container w3-dark-grey w3-round-xlarge w3-allerta">
+    <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta">
         <tr>
             <th>Item</th>
             <th></th>
