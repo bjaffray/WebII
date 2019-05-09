@@ -26,7 +26,7 @@
 require("banner.php");
 
 
-foreach ($_SESSION('store_items') as $value) {
+foreach ($_SESSION['store_items'] as $value) {
     echo "Item: " . $value . "<br>";
 }
 
