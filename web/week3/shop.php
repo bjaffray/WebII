@@ -77,7 +77,7 @@
             echo "<td>" . $to_print->price;
             echo "<td><input type=\"checkbox\" name=\"cart\" value=\"" . $to_print->name . "\" ";
             if ($to_print->in_cart) echo "checked";
-            echo "onclick=\"" . $to_print->addToCart() . "\">";
+            echo "onclick=\"" . $to_print->addToCart() . "\">";   //Get what ever this is working
         }
         ?>
     </table>
