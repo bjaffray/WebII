@@ -13,15 +13,6 @@
             $this->in_cart = $in_cart;
         }
 
-        public function printTblItem() {
-            echo "<tr>";
-            echo "<td>" . $this->name . "<td/>";
-            echo "<td><img src=\"" . $this->filep . "\" alt=\"" . $this->name . "\"><td/>";
-            echo "<td>" . $this->desc . "<td/>";
-            echo "<td>" . $this->price . "<td/>";
-            echo "<td>" . $this->in_cart . "<td/>";
-            echo "<tr/>";
-        }
     }
 
     $items = array();
@@ -71,7 +62,13 @@
         </tr>
         <?php
         foreach ($_SESSION['store_items'] as $to_print) {
-            $to_print->printTblItem();
+            echo "<tr>";
+            echo "<td>" . $to_print->name . "<td/>";
+            echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\"><td/>";
+            echo "<td>" . $to_print->desc . "<td/>";
+            echo "<td>" . $to_print->price . "<td/>";
+            echo "<td>" . $to_print->in_cart . "<td/>";
+            echo "<tr/>";
         }
         ?>
     </table>
