@@ -58,6 +58,7 @@
     <span class="w3-xxxlarge w3-allerta">Welcome to the dota secret shop</span>
 </div> 
 
+<br> <br> <br> <br>
 
 <div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
     <table class="w3-table w3-bordered">
@@ -69,9 +70,10 @@
             <th>Is it in the cart</th>
         </tr>
         <?php
+        echo "prining info";
+        
         foreach ($_SESSION['shop_items'] as $to_print) {
             $to_print->printTblItem();
-            echo "printing";
         }
         ?>
     </table>
