@@ -72,7 +72,7 @@
             <th>Is it in the cart</th>
         </tr>";
 
-        foreach ($_SESSION['shop_items'] as $to_print) {
+        foreach ($_SESSION['store_items'] as $to_print) {
             $to_print->printTblItem();
         }
         ?>
