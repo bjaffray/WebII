@@ -26,9 +26,10 @@
     require("banner.php");
 
     foreach ($_SESSION['store_items'] as $temp) {
-        if ($temp->in_cart == 1) {
-            echo "Item: " . $temp->name . " is in the cart! <br>";
-        }
+        $temp->printInfo();
+        // if ($temp->in_cart == 1) {
+        //     echo "Item: " . $temp->name . " is in the cart! <br>";
+        // }
     }
 ?>
 <br> <br>

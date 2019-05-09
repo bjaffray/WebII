@@ -12,6 +12,7 @@ class Item {
 
         public function printInfo() {
             echo "Name: " . $this->name . " | Price: " . $this->price . " | Description: " . $this->desc . " | File Path: " . $this->filep . "<br>";
+            echo "The cart has: " . $this->in_cart . "<br>";
         }
 
 
