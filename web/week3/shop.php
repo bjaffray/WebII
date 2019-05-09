@@ -15,11 +15,11 @@
 
         public function printTblItem() {
             echo "<tr>";
-            echo "<td>" . $item->name . "<td/>";
-            echo "<td><img src=\"" . $item->filep . "\" alt=\"" . $item->name . "\"><td/>";
-            echo "<td>" . $item->desc . "<td/>";
-            echo "<td>" . $item->price . "<td/>";
-            echo "<td>" . $item->in_cart . "<td/>";
+            echo "<td>" . $this->name . "<td/>";
+            echo "<td><img src=\"" . $this->filep . "\" alt=\"" . $this->name . "\"><td/>";
+            echo "<td>" . $this->desc . "<td/>";
+            echo "<td>" . $this->price . "<td/>";
+            echo "<td>" . $this->in_cart . "<td/>";
             echo "<tr/>";
         }
     }
@@ -60,8 +60,8 @@
 
 <br> <br> <br> <br>
 
-<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
-    <table class="w3-table w3-bordered">
+<div>
+    <table class="w3-table w3-bordered w3-container w3-dark-grey w3-round-xlarge">
         <tr>
             <th>Item</th>
             <th>Pic</th>
