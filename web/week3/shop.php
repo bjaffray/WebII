@@ -5,23 +5,19 @@
 
     class Item {
         // constructor
-        public function __construct($name, $price, $desc, $filep) {
+        public function __construct($name, $price, $desc, $filep, $in_cart) {
             $this->name = $name;
             $this->price = $price;
             $this->desc = $desc;
             $this->filep = $filep;
+            $this->in_cart = $in_cart;
         }
-
-        public function printInfo() {
-            echo "Name = " . $this->name . " | Price = " . $this->price . " | Description = " . $this->desc . " | File Path = " . $this->filep . "\n";
-        }
-
     }
 
     $items = array();
 
     while(!feof($myfile)) {
-        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile));
+        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile), false);
         fgets($myfile);
         array_push($items, $temp);
     }
@@ -29,11 +25,6 @@
     $_SESSION['store_items'] = $items;
 
     fclose($myfile);
-
-
-    foreach ($_SESSION['store_items'] as $toprint) {
-        echo $toprint->name;
-    }
 ?>
 
 <!DOCTYPE html>
@@ -58,9 +49,33 @@
 </div> 
 
 
+<table>
+    <tr>
+        <th>Item</th>
+        <th>Pic</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Is it in the cart</th>
+    </tr>
+    <?php
+    
+    foreach ($_SESSION['shop_items'] as $item) {
+        echo "<tr>";
 
+        echo "<td>" . $item->name . "<td/>";
+        echo "<td><img src=\"" . $item->filep . "\" alt=\"" . $item->name . "\"><td/>";
+        echo "<td>" . $item->desc . "<td/>";
+        echo "<td>" . $item->price . "<td/>";
+        echo "<td>" . $item->in_cart . "<td/>";
 
+        echo "<tr/>";
+    }
 
+    
+    
+    
+    ?>
+</table>
 
 
 </body>
