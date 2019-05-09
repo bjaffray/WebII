@@ -21,14 +21,22 @@
 
 
 <body>
-
 <?php
-require("banner.php");
+    require("banner.php");
 ?>
+<br> <br>
 
 
 
 
+
+
+
+<br> <br>
+<div class="w3-bar">
+    <button name="tocart" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" style="width:50%" onclick="window.location='cart.php';">Go back to Cart</button>
+    <button name="toconf" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" style="width:50%" onclick="window.location='confirmation.php';">Submit</button>
+</div> 
 </body>
 
 
