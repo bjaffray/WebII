@@ -1,119 +1,119 @@
 Bottle
 650
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Ring of Health
 850
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Void Stone
 850
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Energy Booster
 900
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Vitality Booster
 1100
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Point Booster
 1200
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Platemail
 1400
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Talisman of Evasion
 1400
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Hyperstone
 2000
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Ultimate Orb
 2150
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Demon Edge
 2200
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Mystic Staff
 2700
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Reaver
 3000
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Eaglesong
 3200
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Sacred Relic
 3800
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Perseverance
 1700
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Soul Booster
 3200
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Lotus Orb
 4000
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Moon Shard
 4000
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Bloodstone
 4900
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Eye of Skadi
 5500
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Scyth of Vyse
 5700
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Octarine Core
 5900
 desc
-fp
+./Items/Bottle_(Full)_icon.png
 
 Divine Rapier
 6000
 desc
-fp
+./Items/Bottle_(Full)_icon.png
