@@ -64,10 +64,10 @@
         foreach ($_SESSION['store_items'] as $to_print) {
             echo "<tr>";
             echo "<td>" . $to_print->name; // . "<td/>";
-            echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\"><td/>";
-            echo "<td>" . $to_print->desc . "<td/>";
-            echo "<td>" . $to_print->price . "<td/>";
-            echo "<td>" . $to_print->in_cart . "<td/>";
+            echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">"; // <td/>";
+            echo "<td>" . $to_print->desc; //  . "<td/>";
+            echo "<td>" . $to_print->price; //  . "<td/>";
+            echo "<td>" . $to_print->in_cart; //  . "<td/>";
             echo "<tr/>";
         }
         ?>
