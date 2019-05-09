@@ -31,10 +31,11 @@
 
     <script>
     
-    function checkInfo(address, onoff)
+    function checkInfo(address, name)
     {
-        var temp = document.getElementById(str.concat(address, "CBox"));
-        if (!onoff) {
+        var temp = document.getElementById(str.concat(name, "CBox"));
+        
+        if (!temp.checked) {
             <?php $_SESSION['store_items'][address]->in_cart = true; ?>
             temp.checked = true;
         }
@@ -69,7 +70,7 @@ require("banner.php");
         </tr>
         <?php
         foreach ($_SESSION['store_items'] as $key => $to_print) {
-            echo "<tr onclick=\"checkInfo(" . $key . ", " . $to_print->in_cart . ")\">";
+            echo "<tr onclick=\"checkInfo(" . $key . ", " . $to_print->name . ")\">";
             echo "<td>" . $to_print->name;
             echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">";
             echo "<td>" . $to_print->desc;
