@@ -34,7 +34,7 @@
 
 
 <br> <br>
-<div class="w3-bar">
+<div class="w3-bar w3-center">
     <input type="button" name="tocheckout" value="Go to Checkout" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" onclick="window.location='checkout.php';">
     <input type="button" name="toshop" value="Go back to Shop" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" onclick="window.location='shop.php';">
 </div> 
