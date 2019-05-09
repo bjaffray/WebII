@@ -70,7 +70,7 @@ require("banner.php");
         </tr>
         <?php
         foreach ($_SESSION['store_items'] as $key => $to_print) {
-            echo "<tr onclick=\"checkInfo($key)\">";
+            echo "<tr" . "onclick=\"checkInfo($key)\">";
             echo "<td>" . $to_print->name;
             echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">";
             echo "<td>" . $to_print->desc;
