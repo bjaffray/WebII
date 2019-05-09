@@ -69,7 +69,10 @@ require("banner.php");
             <th>Add to Cart</th>
         </tr>
         <?php
-        foreach ($_SESSION['store_items'] as $key => $to_print) {
+    //  foreach ($_SESSION['store_items'] as $key => $to_print) {
+
+        for ($i = 0; $i < sizeof($_SESSION['store_items']); $i++) {
+            $to_print = $_SESSION['store_items'][$i];
             echo "<tr onclick=\"checkInfo($key)\">";
             echo "<td>" . $to_print->name;
             echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">";
