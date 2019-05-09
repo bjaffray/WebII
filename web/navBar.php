@@ -4,7 +4,7 @@ $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 
 ?>
 
-<div class="w3-container w3-round-xlarge w3-black">
+<div class="w3-container w3-round-xlarge w3-black w3-margin-top w3-margin-left w3-margin-right">
 	<h1>
 		<ul>
 			<li> Welcome to Benj's Assignments homepage!</li>
