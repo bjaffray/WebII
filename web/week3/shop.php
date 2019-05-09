@@ -53,14 +53,14 @@
 
 <body>
 
-<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin-top w3-margin-left w3-margin-right">
+<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
     <img src="Dota2.png" class="w3-round w3-margin-left" alt="Dota2"> 
-    <span class="w3-xxxlarge w3-margin-top w3-allerta">Welcome to the dota secret shop</span>
+    <span class="w3-xxxlarge w3-allerta">Welcome to the dota secret shop</span>
 </div> 
 
 
-<div class="w3-container w3-dark-grey w3-round-xlarge">
-    <table>
+<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
+    <table class="w3-table w3-bordered">
         <tr>
             <th>Item</th>
             <th>Pic</th>
@@ -69,11 +69,10 @@
             <th>Is it in the cart</th>
         </tr>
         <?php
-        
         foreach ($_SESSION['shop_items'] as $to_print) {
             $to_print->printTblItem();
+            echo "printing";
         }
-        
         ?>
     </table>
 </div>
