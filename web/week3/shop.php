@@ -17,9 +17,9 @@
 
 
 
-<body class="w3-allerta">
+<body>
 
-<div class="w3-container w3-dark-grey">
+<div class="w3-container w3-dark-grey w3-allerta">
     <img src="Dota2.png" class="w3-round w3-margin-left" alt="Dota2"> 
     <div class="w3-xxxlarge">Welcome to the dota secret shop</div>
 </div> 
