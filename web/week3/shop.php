@@ -55,19 +55,21 @@
     <table class="w3-table w3-bordered w3-container w3-dark-grey w3-round-xlarge">
         <tr>
             <th>Item</th>
-            <th>Pic</th>
+            <th></th>
             <th>Description</th>
             <th>Price</th>
-            <th>Is it in the cart</th>
+            <th></th>
         </tr>
         <?php
         foreach ($_SESSION['store_items'] as $to_print) {
             echo "<tr>";
-            echo "<td>" . $to_print->name; // . "<td/>";
-            echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">"; // <td/>";
-            echo "<td>" . $to_print->desc; //  . "<td/>";
-            echo "<td>" . $to_print->price; //  . "<td/>";
-            echo "<td>" . $to_print->in_cart; //  . "<td/>";
+            echo "<td>" . $to_print->name;
+            echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">";
+            echo "<td>" . $to_print->desc;
+            echo "<td>" . $to_print->price;
+            echo "<td><input type=\"checkbox\" name=\"cart\" value=\"" . $to_print->name . "\" ";
+            if ($to_print->in_cart) echo "checked";
+            echo ">";
             echo "<tr/>";
         }
         ?>
