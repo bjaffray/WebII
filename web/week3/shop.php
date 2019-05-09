@@ -62,16 +62,16 @@
 
 <div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
     <table class="w3-table w3-bordered">
-        <tr>
+        <?php
+        echo 
+       "<tr>
             <th>Item</th>
             <th>Pic</th>
             <th>Description</th>
             <th>Price</th>
             <th>Is it in the cart</th>
-        </tr>
-        <?php
-        echo "prining info";
-        
+        </tr>";
+
         foreach ($_SESSION['shop_items'] as $to_print) {
             $to_print->printTblItem();
         }
