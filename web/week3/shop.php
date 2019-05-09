@@ -65,7 +65,7 @@ require("banner.php");
 
     <br> <br>
     <div class="footer">
-        <button name="tocart" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border w3-border-red" onclick="window.location='cart.php';">Go to Cart</button>
+        <button name="tocart" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border w3-border-rouge" onclick="window.location='cart.php';">Go to Cart</button>
     </div>
 </div>
 
