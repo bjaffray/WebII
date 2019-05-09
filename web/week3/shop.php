@@ -71,7 +71,7 @@ require("banner.php");
         <?php
     //  foreach ($_SESSION['store_items'] as $key => $to_print) {
 
-        for ($i = 0; $i < sizeof($_SESSION['store_items']); $i++) {
+        for ($i = 0; $i < sizeof($_SESSION['store_items']) - 1; $i++) {
             $to_print = $_SESSION['store_items'][$i];
             echo "<tr onclick=\"checkInfo($key)\">";
             echo "<td>" . $to_print->name;
