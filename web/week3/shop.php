@@ -65,7 +65,7 @@
             <th>Item</th>
             <th></th>
             <th>Description</th>
-            <th>Price</th>
+            <th>Price (Gold)</th>
             <th>Add to Cart</th>
         </tr>
         <?php
