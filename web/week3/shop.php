@@ -64,8 +64,7 @@ require("banner.php");
     </table>
 
     <br> <br>
-
-    <input type="button" name="tocart" value="Go to Cart" class="w3-button w3-xlarge w3-block w3-center w3-btn w3-dark-grey w3-round-large" onclick="window.location='cart.php';">
+    <button name="tocart" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" onclick="window.location='cart.php';">Go to Cart</button>
 </div>
 
 </body>
