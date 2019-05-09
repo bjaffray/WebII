@@ -80,6 +80,7 @@
             echo "onclick=\"" . $to_print->addToCart() . "\">";
         }
         ?>
+        <input type="button" name="tocart" value="tocart">
     </table>
 </div>
 
