@@ -25,10 +25,11 @@
 <?php
 require("banner.php");
 
+print_r($_SESSION);
 
-foreach ($_SESSION['store_items'] as $value) {
-    echo "Item: " . $value . "<br>";
-}
+// foreach ($_SESSION['store_items'] as $value) {
+//     echo "Item: " . $value . "<br>";
+// }
 
 ?>
 
