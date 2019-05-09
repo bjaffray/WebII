@@ -8,7 +8,7 @@
     $items = array();
 
     while(!feof($myfile)) {
-        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile), false);
+        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile), 0);
         fgets($myfile);
         array_push($items, $temp);
     }
@@ -36,11 +36,11 @@
         var temp = document.getElementById(address);
 
         if (!temp.checked) {
-            <?php $_SESSION['store_items'][address]->in_cart = true; ?>
+            <?php $_SESSION['store_items'][address]->in_cart = 1; ?>
             temp.checked = true;
         }
         else {
-            <?php $_SESSION['store_items'][address]->in_cart = false; ?>
+            <?php $_SESSION['store_items'][address]->in_cart = 0; ?>
             temp.checked = false;
         }
     }
@@ -79,7 +79,7 @@ require("banner.php");
             echo "<td>" . $to_print->desc;
             echo "<td>" . $to_print->price;
             echo "<td><input type=\"checkbox\" name=\"cart\" id=\"" . $i . "\"";
-            if ($to_print->in_cart) echo "checked>";
+            if ($to_print->in_cart == 1) echo "checked>";
             else echo ">";
         }
         ?>
