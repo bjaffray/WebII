@@ -1,6 +1,38 @@
 <?php
     // Start the session
     session_start();
+    $myfile = fopen("store.txt", "r") or die("Unable to open file!");
+
+    class Item {
+        // constructor
+        public function __construct($name, $price, $desc, $filep) {
+            $this->name = $name;
+            $this->price = $price;
+            $this->desc = $desc;
+            $this->filep = $filep;
+        }
+
+        public function printInfo() {
+            echo "Name = " . $this->name . " | Price = " . $this->price . " | Description = " . $this->desc . " | File Path = " . $this->filep . "\n";
+        }
+
+    }
+
+    $items = array();
+
+    while(!feof($myfile)) {
+        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile));
+        fgets($myfile);
+        array_push($items, $temp);
+    }
+
+    fclose($myfile);
+
+    foreach ($items as $toprint) {
+        $toprint->printInfo();
+    }
+
+
 ?>
 
 <!DOCTYPE html>

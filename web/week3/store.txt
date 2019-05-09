@@ -1,48 +1,119 @@
-Items:
-Bottle - 650
+Bottle
+650
+desc
+fp
 
-Ring of Health - 850
+Ring of Health
+850
+desc
+fp
 
-Void Stone - 850
+Void Stone
+850
+desc
+fp
 
-Energy Booster - 900
+Energy Booster
+900
+desc
+fp
 
-Vitality Booster - 1100
+Vitality Booster
+1100
+desc
+fp
 
-Point Booster - 1200
+Point Booster
+1200
+desc
+fp
 
-Platemail - 1400
+Platemail
+1400
+desc
+fp
 
-Talisman of Evasion - 1400
+Talisman of Evasion
+1400
+desc
+fp
 
-Hyperstone - 2000
+Hyperstone
+2000
+desc
+fp
 
-Ultimate Orb - 2150
+Ultimate Orb
+2150
+desc
+fp
 
-Demon Edge - 2200
+Demon Edge
+2200
+desc
+fp
 
-Mystic Staff - 2700
+Mystic Staff
+2700
+desc
+fp
 
-Reaver - 3000
+Reaver
+3000
+desc
+fp
 
-Eaglesong - 3200
+Eaglesong
+3200
+desc
+fp
 
-Sacred Relic - 3800
+Sacred Relic
+3800
+desc
+fp
 
-Perseverance - 1700
+Perseverance
+1700
+desc
+fp
 
-Soul Booster - 3200
+Soul Booster
+3200
+desc
+fp
 
-Lotus Orb - 4000
+Lotus Orb
+4000
+desc
+fp
 
-Moon Shard - 4000
+Moon Shard
+4000
+desc
+fp
 
-Bloodstone - 4900
+Bloodstone
+4900
+desc
+fp
 
-Eye of Skadi - 5500
+Eye of Skadi
+5500
+desc
+fp
 
-Scyth of Vyse - 5700
+Scyth of Vyse
+5700
+desc
+fp
 
-Octarine Core - 5900
+Octarine Core
+5900
+desc
+fp
 
-Divine Rapier - 6000
+Divine Rapier
+6000
+desc
+fp
