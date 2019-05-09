@@ -1,119 +1,119 @@
 Bottle
 650
-desc
+An old bottle that survived the ages, the contents placed inside become enchanted. 
 ./Items/Bottle_(Full)_icon.png
 
 Ring of Health
 850
-desc
+A shiny ring found beneath a fat halfling's corpse. 
 ./Items/Ring_of_Health_icon.png
 
 Void Stone
 850
-desc
+Jewelry that was once used to channel nether realm magic, this ring pulses with energy. 
 ./Items/Void_Stone_icon.png
 
 Energy Booster
 900
-desc
+This lapis gemstone is commonly added to the collection of wizards seeking to improve their presence in combat. 
 ./Items/Energy_Booster_icon.png
 
 Vitality Booster
 1100
-desc
+A ruby gemstone that has been passed down through generations of warrior kin. 
 ./Items/Vitality_Booster_icon.png
 
 Point Booster
 1200
-desc
+A perfectly formed amethyst that nourishes body and mind when held.
 ./Items/Point_Booster_icon.png
 
 Platemail
 1400
-desc
+Thick metal plates that protect the entire upper body. Avoid dropping on feet. 
 ./Items/Platemail_icon.png
 
 Talisman of Evasion
 1400
-desc
+A necklace that allows you to anticipate enemy attacks. 
 ./Items/Talisman_of_Evasion_icon.png
 
 Hyperstone
 2000
-desc
+A mystical, carved stone that boosts the fervor of the holder. 
 ./Items/Hyperstone_icon.png
 
 Ultimate Orb
 2150
-desc
+A mystical orb containing the essence of life.
 ./Items/Ultimate_Orb_icon.png
 
 Demon Edge
 2200
-desc
+One of the oldest weapons forged by the Demon-Smith Abzidian, it killed its maker when he tested its edge.
 ./Items/Demon_Edge_icon.png
 
 Mystic Staff
 2700
-desc
+Enigmatic staff made of only the most expensive crystals. 
 ./Items/Mystic_Staff_icon.png
 
 Reaver
 3000
-desc
+A massive axe capable of tearing whole mountains down. 
 ./Items/Reaver_icon.png
 
 Eaglesong
 3200
-desc
+Capturing the majestic call of an eagle, this mystical horn brings limitless dexterity to those who hear it. 
 ./Items/Eaglesong_icon.png
 
 Sacred Relic
 3800
-desc
+An ancient weapon that often turns the tides of war. 
 ./Items/Sacred_Relic_icon.png
 
 Perseverance
 1700
-desc
+A gem that grants heart to the bearer.
 ./Items/Perseverance_icon.png
 
 Soul Booster
 3200
-desc
+Regain lost courage.
 ./Items/Soul_Booster_icon.png
 
 Lotus Orb
 4000
-desc
+The jewel at its center still reflects a pale image of its creator. 
 ./Items/Lotus_Orb_icon.png
 
 Moon Shard
 4000
-desc
+Said to be a tear from the lunar goddess Selemene. 
 ./Items/Moon_Shard_icon.png
 
 Bloodstone
 4900
-desc
+The Bloodstone's bright ruby color is unmistakable on the battlefield, as the owner seems to have infinite vitality and spirit. 
 ./Items/Bloodstone_icon.png
 
 Eye of Skadi
 5500
-desc
+Extremely rare artifact, guarded by the azure dragons. 
 ./Items/Eye_of_Skadi_icon.png
 
 Scyth of Vyse
 5700
-desc
+The most guarded relic among the cult of Vyse, it is the most coveted weapon among magi. 
 ./Items/Scythe_of_Vyse_icon.png
 
 Octarine Core
 5900
-desc
+At the core of spellcraft are spectrums only the very gifted can sense. 
 ./Items/Octarine_Core_icon.png
 
 Divine Rapier
 6000
-desc
+So powerful, it cannot have a single owner. 
 ./Items/Divine_Rapier_icon.png
