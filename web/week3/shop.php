@@ -13,6 +13,14 @@
             $this->in_cart = $in_cart;
         }
 
+
+        public function addToCart() {
+            if ($this->in_cart)
+                $this->in_cart = false;
+            else
+                $this->in_cart = true;
+        }
+
     }
 
     $items = array();
@@ -69,7 +77,7 @@
             echo "<td>" . $to_print->price;
             echo "<td><input type=\"checkbox\" name=\"cart\" value=\"" . $to_print->name . "\" ";
             if ($to_print->in_cart) echo "checked";
-            echo ">";
+            echo "onclick=\"" . $to_print->addToCart() . "\">";
         }
         ?>
     </table>
