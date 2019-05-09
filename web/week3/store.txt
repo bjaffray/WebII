@@ -106,7 +106,7 @@ desc
 Scyth of Vyse
 5700
 desc
-./Items/Eye_of_Skadi_icon.png
+./Items/Scythe_of_Vyse_icon.png
 
 Octarine Core
 5900
