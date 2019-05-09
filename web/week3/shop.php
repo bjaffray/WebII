@@ -81,7 +81,7 @@
         }
         ?>
     </table>
-    <input type="button" name="tocart" value="Go to Cart">
+    <input type="button" name="tocart" value="Go to Cart" class="w3-button w3-xxxlarge w3-block w3-center w3-btn w3-dark-grey w3-round-large">
 </div>
 
 </body>
