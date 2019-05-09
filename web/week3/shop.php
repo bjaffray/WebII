@@ -60,7 +60,7 @@
 <br> <br> <br> <br>
 
 <div>
-    <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta">
+    <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
         <tr>
             <th>Item</th>
             <th></th>
@@ -81,7 +81,10 @@
         }
         ?>
     </table>
-    <input type="button" name="tocart" value="Go to Cart" class="w3-button w3-xxxlarge w3-block w3-center w3-btn w3-dark-grey w3-round-large">
+
+    <br> <br>
+
+    <input type="button" name="tocart" value="Go to Cart" class="w3-button w3-xlarge w3-block w3-center w3-btn w3-dark-grey w3-round-large">
 </div>
 
 </body>
