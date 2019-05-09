@@ -77,7 +77,6 @@ require("banner.php");
             echo "<td>" . $to_print->price;
             echo "<td><input type=\"checkbox\" name=\"cart\" id=\"$key\"";
             if ($to_print->in_cart) echo "checked\">";
-            echo "<tr/>";
         }
         ?>
     </table>
