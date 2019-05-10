@@ -78,9 +78,9 @@ require("banner.php");
             echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">";
             echo "<td>" . $to_print->desc;
             echo "<td>" . $to_print->price;
-            echo "<td><input type=\"checkbox\" name=\"cart[]\" id=\"" . $i . "\"";
+            echo "<td><input type=\"checkbox\" name=\"cart\" id=\"" . $i . "\"";
             if ($to_print->in_cart == 1) echo "checked";
-            echo "onclick=\"checkInfo(" . $i . ")\">";
+            echo " >";
         }
         ?>
     </table>
