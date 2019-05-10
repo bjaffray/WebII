@@ -17,10 +17,10 @@ class Item {
 
 
         public function addToCart() {
-            if ($this->in_cart)
-                $this->in_cart = false;
+            if ($this->in_cart == 1)
+                $this->in_cart = 0;
             else
-                $this->in_cart = true;
+                $this->in_cart = 1;
         }
 
     }

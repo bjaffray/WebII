@@ -24,7 +24,12 @@
 <body>
 <?php
     require("banner.php");
+?>
 
+
+<div class="w3-table w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+
+<?php
     foreach ($_SESSION['store_items'] as $temp) {
         $temp->printInfo();
         // if ($temp->in_cart == 1) {
@@ -32,6 +37,9 @@
         // }
     }
 ?>
+
+</div>
+
 <br> <br>
 
 
