@@ -4,7 +4,8 @@
 
     session_start();
 
-    readFile();
+    require("filestuff.php");
+    readItemFile();
 ?>
 
 <!DOCTYPE html>
