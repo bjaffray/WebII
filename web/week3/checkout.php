@@ -3,6 +3,9 @@
     require("Item.php");
 
     session_start();
+
+    //We need a street line 1/2
+    //  City, State, Zip
 ?>
 
 <!DOCTYPE html>
@@ -26,10 +29,23 @@
 ?>
 <br> <br>
 
+<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+Street Address:
+<input type="text" id="str1"> <br>
+Street Address 2:
+<input type="text" id="str2"> <br>
+
+City
+<input type="text" id="city"> <br>
+State
+<input type="text" id="state"> <br>
+Zip
+<input type="text" id="zip"> <br>
 
 
 
-
+</form>
 
 
 <br> <br> <br> <br>

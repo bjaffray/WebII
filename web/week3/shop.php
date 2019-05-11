@@ -71,7 +71,7 @@ require("banner.php");
         <?php
         for ($i = 0; $i < sizeof($_SESSION['store_items']) - 1; $i++) {
             $to_print = $_SESSION['store_items'][$i];
-            echo "<tr onclick=\"checkInfo(" . $i . "); <?php $to_print->addToCart() ?>\">";
+            echo "<tr onclick=\"checkInfo(" . $i . ")\">";
             echo "<td>" . $to_print->name;
             echo "<td><img src=\"" . $to_print->filep . "\" alt=\"" . $to_print->name . "\">";
             echo "<td>" . $to_print->desc;
