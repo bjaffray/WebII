@@ -41,7 +41,7 @@ City <br>
 State <br>
 <input type="text" id="state"> <br>
 Zip <br>
-<input type="text" id="zip"> <br>
+<input type="text" id="zip"> <br><br><br><br>
 
 
 
