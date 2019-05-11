@@ -29,7 +29,7 @@
 ?>
 <br> <br>
 
-<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
 
 Street Address:
 <input type="text" id="str1"> <br>
