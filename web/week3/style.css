@@ -17,6 +17,8 @@ form {
     border-collapse: collapse;
     width: 100%;
     max-width: 35%;
+    margin-left:50%; 
+    margin-right:50%;
 }
 
 .footer {
