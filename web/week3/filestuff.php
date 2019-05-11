@@ -28,4 +28,9 @@
         fclose($myfile);
     }
 
+    if(isset($_POST['submit'])) {
+        eader("LOCATION: cart.php");
+        writeItemFile();
+    } 
+
 ?>
