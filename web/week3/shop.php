@@ -36,11 +36,11 @@
         var temp = document.getElementById(address);
 
         if (!temp.checked) {
-           // <?php $_SESSION['store_items'][address]->addToCart(); ?>
+           
             temp.checked = true;
         }
         else {
-           // <?php $_SESSION['store_items'][address]->addToCart(); ?>
+          
             temp.checked = false;
         }
     }
