@@ -8,8 +8,7 @@
     $items = array();
 
     while(!feof($myfile)) {
-        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile), 0);
-        fgets($myfile);
+        $temp = new Item(fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile), fgets($myfile));
         array_push($items, $temp);
     }
 
