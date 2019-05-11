@@ -29,7 +29,7 @@
     }
 
     if(isset($_POST['submit'])) {
-        eader("LOCATION: cart.php");
+        header("LOCATION: cart.php");
         writeItemFile();
     } 
 
