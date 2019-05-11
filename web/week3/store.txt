@@ -2,7 +2,7 @@ Bottle
 650
 An old bottle that survived the ages, the contents placed inside become enchanted.
 ./Items/Bottle_(Full)_icon.png
-1
+0
 Ring of Health
 850
 A shiny ring found beneath a fat halfling's corpse.

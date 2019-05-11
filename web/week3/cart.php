@@ -3,6 +3,8 @@
     require("Item.php");
 
     session_start();
+
+    readFile();
 ?>
 
 <!DOCTYPE html>
