@@ -15,7 +15,17 @@
     }
 
     function writeItemFile() {
+        $myfile = fopen("storewrite.txt", "w") or die("Unable to open file!");
 
+        foreach($_SESSION['store_items'] as $output) {
+            echo $output->name . "\n";
+            echo $output->price . "\n";
+            echo $output->desc . "\n";
+            echo $output->filep . "\n";
+            echo $output->in_cart . "\n";
+        }
+
+        fclose($myfile);
     }
 
 ?>

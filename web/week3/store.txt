@@ -117,3 +117,4 @@ Divine Rapier
 6000
 So powerful, it cannot have a single owner.
 ./Items/Divine_Rapier_icon.png
+0
