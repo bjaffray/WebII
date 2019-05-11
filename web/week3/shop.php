@@ -36,11 +36,11 @@
         var temp = document.getElementById(address);
 
         if (!temp.checked) {
-            <?php $_SESSION['store_items'][address]->addToCart(); ?>
+           // <?php $_SESSION['store_items'][address]->addToCart(); ?>
             temp.checked = true;
         }
         else {
-            <?php $_SESSION['store_items'][address]->addToCart(); ?>
+           // <?php $_SESSION['store_items'][address]->addToCart(); ?>
             temp.checked = false;
         }
     }
@@ -69,8 +69,6 @@ require("banner.php");
             <th>Items in Cart</th>
         </tr>
         <?php
-    //  foreach ($_SESSION['store_items'] as $key => $to_print) {
-
         for ($i = 0; $i < sizeof($_SESSION['store_items']) - 1; $i++) {
             $to_print = $_SESSION['store_items'][$i];
             echo "<tr onclick=\"checkInfo(" . $i . ")\">";
