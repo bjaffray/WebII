@@ -39,15 +39,17 @@
 
 
 
+<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
 
 
 <br> <br> <br>
-<div class="w3-bar footer">
-    <input type="submit" name="tocheckout" style="width:50%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go Back">
-    <input type="submit" name="submitPayment" style="width:50%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Submit">
-</div> 
+    <div class="w3-bar footer">
+        <input type="submit" name="tocheckout" style="width:50%"
+                class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go Back">
+        <input type="submit" name="submitPayment" style="width:50%"
+                class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Submit">
+    </div> 
+</form>
 </body>
 
 
