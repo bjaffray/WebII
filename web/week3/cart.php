@@ -65,7 +65,7 @@
 
     </table>
 
-    <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center>
+    <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
         <?php
             echo "<h1>The Cart's total price is $total gold</h1>";
         ?>
