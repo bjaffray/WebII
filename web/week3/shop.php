@@ -81,7 +81,7 @@ require("banner.php");
             echo "<td>" . $to_print->price;
             echo "<td><input type=\"checkbox\" name=\"cart$i\" id=\"$i\" value=\"1\"";
             if ($to_print->in_cart == 1) echo "checked";
-            echo " >";
+            echo "onclick=\"checkInfo($i)\">";
         }
         ?>
     </table>
