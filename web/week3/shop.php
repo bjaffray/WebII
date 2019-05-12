@@ -11,7 +11,7 @@
         $items = array();
 
         foreach ($_SESSION['store_items'] as $key=>$to_check) {
-            if ($_POST["cart$key"] == "1") {
+            if ($_POST["cart$key"] == "1\n") {
                 $to_check->addToCart();
             }
         }
