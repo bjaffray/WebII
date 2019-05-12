@@ -39,8 +39,8 @@
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="secondForm">
     <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
-        <u>Put in Address details:</u>
-        <br><br><br><br>
+        <h1>Put in Address details:</h1>]
+        <br><br>
         Street Address: <br>
         <input type="text" id="str1"> <br>
         Street Address 2: <br>
