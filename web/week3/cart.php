@@ -33,10 +33,9 @@
 
 <?php
     foreach ($_SESSION['store_items'] as $temp) {
-        $temp->printInfo();
-        // if ($temp->in_cart == 1) {
-        //     echo "Item: " . $temp->name . " is in the cart! <br>";
-        // }
+        if ($temp->in_cart == 1) {
+            $temp->printInfo();
+        }
     }
 ?>
 

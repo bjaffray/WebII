@@ -8,7 +8,6 @@
     readItemFile();
 
     if(isset($_POST['submit'])) {
-        //writeItemFile();
         $items = array();
 
         foreach ($_SESSION['store_items'] as $key=>$to_check) {
@@ -17,6 +16,7 @@
             }
         }
 
+        writeItemFile();
         header("LOCATION: cart.php");
     } 
 ?>
