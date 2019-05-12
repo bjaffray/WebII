@@ -56,9 +56,9 @@
         }
     }
 
-    echo "For a total of " . $_SESSION['total_price'] . " gold will go to the address:<br>";
+    echo "<br>For a total of " . $_SESSION['total_price'] . " gold will go to the address:<br>";
     echo $_SESSION['street1'] . ", " . $_SESSION['street2'] . ", " . $_SESSION['city'] . ", " . $_SESSION['state'] . ", " . $_SESSION['zip'] . "<br><br><br>";
-    echo "Do you want to accept this order?<br><br><br><br>";
+    echo "<h1>Do you want to accept this order?</h1><br><br><br>";
 
     ?>
 
