@@ -47,7 +47,16 @@
 
     <?php
 
-    echo "The order of" . $_SESSION['total_price'] . "will go to the address<br>";
+    echo "The order of:<br>";
+
+    foreach ($_SESSION['store_items'] as $temp) {
+        if ($temp->in_cart == 1) {
+            echo "- " . $temp->name . ", priced at " . $temp->price . "<br>";
+            $total += $temp->price;
+        }
+    }
+
+    echo "For a total of" . $_SESSION['total_price'] . " gold will go to the address<br>";
     echo $_SESSION['street1'] . ", " . $_SESSION['street2'] . "," . $_SESSION['city'] . "," . $_SESSION['state'] . "," . $_SESSION['zip'] . "<br><br><br>";
     echo "Do you want to accept this order?<br>";
 

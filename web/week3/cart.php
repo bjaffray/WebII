@@ -4,8 +4,6 @@
 
     session_start();
 
-    readFile();
-
 
     if(isset($_POST['toshop'])) {
         header("LOCATION: shop.php");
@@ -59,7 +57,7 @@
                     $total += $temp->price;
                 }
             }
-            
+
             $_SESSION['total_price'] = $total;
         ?>
 
