@@ -41,7 +41,7 @@
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
 
-<div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+<div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center" id="accept">
     <h1>The Order is as Follows:</h1>
     <br>
 
