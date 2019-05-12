@@ -16,7 +16,7 @@
             }
         }
 
-        writeItemFile();
+        //writeItemFile();
         header("LOCATION: cart.php");
     } 
 

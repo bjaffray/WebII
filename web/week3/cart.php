@@ -29,18 +29,37 @@
 ?>
 
 
-<div class="w3-table w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
+    <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+        <tr>
+            <th>Item</th>
+            <th></th>
+            <th>Description</th>
+            <th>Price (Gold)</th>
+            <th>Items in Cart</th>
+        </tr>
+        <?php
+            foreach ($_SESSION['store_items'] as $temp) {
+                if ($temp->in_cart == 1) {
+                    echo "<tr>";
+                    echo "<td>" . $temp->name;
+                    echo "<td><img src=\"$temp->filep\" alt=\"$temp->name\">";
+                    echo "<td>" . $temp->desc;
+                    echo "<td>" . $temp->price;
+                }
+            }
+        ?>
 
-<?php
-    foreach ($_SESSION['store_items'] as $temp) {
-        if ($temp->in_cart == 1) {
-            $temp->printInfo();
-        }
-    }
-?>
+</table>
 
-</div>
-
+    <br> <br> <br> <br>
+    <div class="w3-bar footer">
+        <button name="toshop" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" 
+            style="width:50%" onclick="window.location='shop.php';">Go Back to Shop</button>
+        <button name="tocheckout" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" 
+            style="width:50%" onclick="window.location='checkout.php';">Go to Checkout</button>
+    </div> 
+</div> 
 <br> <br>
 
 
@@ -50,12 +69,7 @@
 
 
 <br> <br> <br> <br>
-<div class="w3-bar footer">
-    <button name="toshop" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" 
-        style="width:50%" onclick="window.location='shop.php';">Go Back to Shop</button>
-    <button name="tocheckout" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" 
-        style="width:50%" onclick="window.location='checkout.php';">Go to Checkout</button>
-</div> 
+
 
 </body>
 
