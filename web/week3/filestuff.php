@@ -29,8 +29,9 @@
     }
 
     if(isset($_POST['submit'])) {
-        header("LOCATION: cart.php");
         writeItemFile();
+
+        header("LOCATION: cart.php");
     } 
 
 ?>
