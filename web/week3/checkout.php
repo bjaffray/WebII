@@ -37,20 +37,21 @@
 ?>
 <br> <br>
 
-<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="secondForm w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
-    <br><br><br><br>
-    Street Address: <br>
-    <input type="text" id="str1"> <br>
-    Street Address 2: <br>
-    <input type="text" id="str2"> <br>
+<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="secondForm">
+    <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+        <br><br><br><br>
+        Street Address: <br>
+        <input type="text" id="str1"> <br>
+        Street Address 2: <br>
+        <input type="text" id="str2"> <br>
 
-    City <br>
-    <input type="text" id="city"> <br>
-    State <br>
-    <input type="text" id="state"> <br>
-    Zip <br>
-    <input type="text" id="zip"> <br><br><br><br>
-
+        City <br>
+        <input type="text" id="city"> <br>
+        State <br>
+        <input type="text" id="state"> <br>
+        Zip <br>
+        <input type="text" id="zip"> <br><br><br><br>
+    </div>
 
 
 

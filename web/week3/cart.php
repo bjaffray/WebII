@@ -58,7 +58,7 @@
             }
         ?>
 
-</table>
+    </table>
 
     <br> <br> <br> <br>
     <div class="w3-bar footer">
