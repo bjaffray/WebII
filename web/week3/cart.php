@@ -40,9 +40,6 @@
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
-        <h1>Items In the Cart:</h1>
-        <br>
-
         <tr>
             <th>Item</th>
             <th></th>
@@ -64,6 +61,8 @@
         ?>
 
     </table>
+
+    <br> <br>
 
     <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
         <?php
