@@ -5,6 +5,15 @@
     session_start();
 
     readFile();
+
+
+    if(isset($_POST['toshop'])) {
+        header("LOCATION: shop.php");
+    } 
+
+    if(isset($_POST['tocheckout'])) {
+        header("LOCATION: checkout.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -53,10 +62,10 @@
 
     <br> <br> <br> <br>
     <div class="w3-bar footer">
-        <button name="toshop" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" 
-            style="width:50%" onclick="window.location='shop.php';">Go Back to Shop</button>
-        <button name="tocheckout" class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" 
-            style="width:50%" onclick="window.location='checkout.php';">Go to Checkout</button>
+        <input type="submit" name="toshop" style="width:50%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go Back to Shop">
+        <input type="submit" name="tocheckout" style="width:50%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to Checkout">
     </div> 
 </div> 
 <br> <br>
