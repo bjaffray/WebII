@@ -45,7 +45,7 @@ require("banner.php");
 
 <br> <br>
 
-<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
         <tr>
             <th>Item</th>
