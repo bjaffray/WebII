@@ -41,6 +41,22 @@
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
 
+<div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+    <h1>The Order is as Follows:</h1>
+    <br>
+
+    <?php
+
+    echo "The order of" . $_SESSION['total_price'] . "will go to the address<br>";
+    echo $_SESSION['street1'] . ", " . $_SESSION['street2'] . "," . $_SESSION['city'] . "," . $_SESSION['state'] . "," . $_SESSION['zip'] . "<br><br><br>";
+    echo "Do you want to accept this order?<br>";
+
+    ?>
+
+</div>
+
+
+
 
 <br> <br> <br>
     <div class="w3-bar footer">

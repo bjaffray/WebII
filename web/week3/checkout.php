@@ -12,6 +12,13 @@
     } 
 
     if(isset($_POST['toConf'])) {
+
+        $_SESSION['street1'] = htmlentities($_POST['str1']);
+        $_SESSION['street2'] = htmlentities($_POST['str2']);
+        $_SESSION['city'] = htmlentities($_POST['city']);
+        $_SESSION['state'] = htmlentities($_POST['state']);
+        $_SESSION['zip'] = htmlentities($_POST['zip']);
+
         header("LOCATION: confirmation.php");
     }
 ?>
@@ -42,16 +49,16 @@
         <h1>Put in Address details:</h1>
         <br>
         Street Address: <br>
-        <input type="text" id="str1"> <br>
+        <input type="text" name="str1" id="str1"> <br>
         Street Address 2: <br>
-        <input type="text" id="str2"> <br>
+        <input type="text" name="str2" id="str2"> <br>
 
         City <br>
-        <input type="text" id="city"> <br>
+        <input type="text" name="city" id="city"> <br>
         State <br>
-        <input type="text" id="state"> <br>
+        <input type="text" name="state" id="state"> <br>
         Zip <br>
-        <input type="text" id="zip"> <br><br><br><br>
+        <input type="text" name="zip" id="zip"> <br><br><br><br>
     </div>
 
 

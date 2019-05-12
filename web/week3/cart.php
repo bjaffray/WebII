@@ -48,6 +48,7 @@
         </tr>
         <?php
             $total = 0;
+
             foreach ($_SESSION['store_items'] as $temp) {
                 if ($temp->in_cart == 1) {
                     echo "<tr>";
@@ -58,6 +59,8 @@
                     $total += $temp->price;
                 }
             }
+            
+            $_SESSION['total_price'] = $total;
         ?>
 
     </table>
