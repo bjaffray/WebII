@@ -11,7 +11,7 @@
         $items = array();
 
         foreach ($_SESSION['store_items'] as $key=>$to_check) {
-            if ($_POST["cart$key"] == "1\n") {
+            if ($_POST["cart$key"] == "1") {
                 $to_check->addToCart();
             }
         }
@@ -88,10 +88,10 @@ require("banner.php");
 
     <br> <br> <br> <br>
     <div class="w3-bar footer">
-        <input type="submit" name="submit" style="width:50%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to Cart">
         <input type="button" name="clearCart" style="width:50%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Clear cart">
+        <input type="submit" name="submit" style="width:50%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to Cart">
     </div>
 </div> 
 </form>
