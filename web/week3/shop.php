@@ -12,7 +12,7 @@
         $items = array();
 
         foreach ($_SESSION['store_items'] as $key=>$to_check) {
-            if(isset($_POST["check$key"])) {
+            if ($_POST["cart$key"] == "1") {
                 $to_check->addToCart();
             }
         }
@@ -75,7 +75,7 @@ require("banner.php");
             echo "<td><img src=\"$to_print->filep\" alt=\"$to_print->name\">";
             echo "<td>" . $to_print->desc;
             echo "<td>" . $to_print->price;
-            echo "<td><input type=\"checkbox\" name=\"cart$i\" id=\"$i\"";
+            echo "<td><input type=\"checkbox\" name=\"cart$i\" id=\"$i\" value=\"1\"";
             if ($to_print->in_cart == 1) echo "checked";
             echo " >";
         }
