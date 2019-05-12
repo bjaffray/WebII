@@ -39,33 +39,35 @@
 
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
-    <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
-        <h1>Items In the Cart:</h1>
-        <br>
+    <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+        <table>
+            <h1>Items In the Cart:</h1>
+            <br>
 
-        <tr>
-            <th>Item</th>
-            <th></th>
-            <th>Description</th>
-            <th>Price (Gold)</th>
-        </tr>
-        <?php
-            $total = 0;
-            foreach ($_SESSION['store_items'] as $temp) {
-                if ($temp->in_cart == 1) {
-                    echo "<tr>";
-                    echo "<td>" . $temp->name;
-                    echo "<td><img src=\"$temp->filep\" alt=\"$temp->name\">";
-                    echo "<td>" . $temp->desc;
-                    echo "<td>" . $temp->price;
-                    $total += $temp->price;
+            <tr>
+                <th>Item</th>
+                <th></th>
+                <th>Description</th>
+                <th>Price (Gold)</th>
+            </tr>
+            <?php
+                $total = 0;
+                foreach ($_SESSION['store_items'] as $temp) {
+                    if ($temp->in_cart == 1) {
+                        echo "<tr>";
+                        echo "<td>" . $temp->name;
+                        echo "<td><img src=\"$temp->filep\" alt=\"$temp->name\">";
+                        echo "<td>" . $temp->desc;
+                        echo "<td>" . $temp->price;
+                        $total += $temp->price;
+                    }
                 }
-            }
+                echo "</tr>";
+                echo "<h1>The Cart's total price is $total gold</h1>";
+            ?>
 
-            echo "<h1>The Cart's total prices is $total gold</h1>";
-        ?>
-
-    </table>
+        </table>
+    </div>
 
     <br> <br> <br> <br>
     <div class="w3-bar footer">
