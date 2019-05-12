@@ -18,11 +18,11 @@
         $myfile = fopen("store.txt", "w") or die("Unable to open file!");
 
         foreach($_SESSION['store_items'] as $output) {
-            fwrite($myfile, $output->name . "\n");
-            fwrite($myfile, $output->price . "\n");
-            fwrite($myfile, $output->desc . "\n");
-            fwrite($myfile, $output->filep . "\n");
-            fwrite($myfile, $output->in_cart . "\n");
+            fwrite($myfile, $output->name);
+            fwrite($myfile, $output->price);
+            fwrite($myfile, $output->desc);
+            fwrite($myfile, $output->filep);
+            fwrite($myfile, $output->in_cart);
         }
 
         fclose($myfile);
@@ -32,11 +32,11 @@
         $myfile = fopen("store.txt", "w") or die("Unable to open file!");
 
         foreach($_SESSION['store_items'] as $output) {
-            fwrite($myfile, $output->name . "\n");
-            fwrite($myfile, $output->price . "\n");
-            fwrite($myfile, $output->desc . "\n");
-            fwrite($myfile, $output->filep . "\n");
-            fwrite($myfile, "0\n");
+            fwrite($myfile, $output->name);
+            fwrite($myfile, $output->price);
+            fwrite($myfile, $output->desc);
+            fwrite($myfile, $output->filep);
+            fwrite($myfile, "0");
         }
 
         fclose($myfile);
