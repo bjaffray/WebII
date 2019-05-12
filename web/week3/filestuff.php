@@ -22,7 +22,7 @@
             fwrite($myfile, $output->price);
             fwrite($myfile, $output->desc);
             fwrite($myfile, $output->filep);
-            fwrite($myfile, $output->in_cart . "\n");
+            fwrite($myfile, $output->in_cart);
         }
 
         fclose($myfile);
