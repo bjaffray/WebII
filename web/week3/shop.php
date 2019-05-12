@@ -19,6 +19,10 @@
         writeItemFile();
         header("LOCATION: cart.php");
     } 
+
+    if(isset($_POST['clearCart'])) {
+        clearCartTotaly();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -83,10 +87,13 @@ require("banner.php");
     </table>
 
     <br> <br> <br> <br>
-    <div class="footer">
-        <input type="submit" name="submit" 
+    <div class="w3-bar footer">
+        <input type="submit" name="submit" style="width:50%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to Cart">
+        <input type="button" name="clearCart" style="width:50%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Clear cart">
     </div>
+</div> 
 </form>
 
 </body>

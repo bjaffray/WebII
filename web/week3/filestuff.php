@@ -28,4 +28,18 @@
         fclose($myfile);
     }
 
+    function clearCartTotaly() {
+        $myfile = fopen("store.txt", "w") or die("Unable to open file!");
+
+        foreach($_SESSION['store_items'] as $output) {
+            fwrite($myfile, $output->name . "\n");
+            fwrite($myfile, $output->price . "\n");
+            fwrite($myfile, $output->desc . "\n");
+            fwrite($myfile, $output->filep . "\n");
+            fwrite($myfile, "0\n");
+        }
+
+        fclose($myfile);
+    }
+
 ?>
