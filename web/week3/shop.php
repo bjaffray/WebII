@@ -12,13 +12,8 @@
         $items = array();
 
         for ($i = 0; $i < sizeof($_SESSION['store_items']) - 1; $i++) {
-            $to_add = $_SESSION['store_items'][$i];
-            if(isset($_POST["check$i"])) {
-                array_push($items, $to_add);
-            }
+            $_SESSION['store_items'][$i]->addToCart();
         }
-
-        $_SESSION['cart_items'] = $items;
 
         header("LOCATION: cart.php");
     } 
