@@ -21,7 +21,7 @@
     } 
 
     if(isset($_POST['clearCart'])) {
-        clearCartTotaly();
+        //clearCartTotaly();
     }
 ?>
 
