@@ -15,7 +15,7 @@
     }
 
     function writeItemFile() {
-        $myfile = fopen("storewrite.txt", "w") or die("Unable to open file!");
+        $myfile = fopen("store.txt", "w") or die("Unable to open file!");
 
         foreach($_SESSION['store_items'] as $output) {
             fwrite($myfile, $output->name . "\n");
