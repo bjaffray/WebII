@@ -11,8 +11,10 @@
         //writeItemFile();
         $items = array();
 
-        for ($i = 0; $i < sizeof($_SESSION['store_items']) - 1; $i++) {
-            $_SESSION['store_items'][$i]->addToCart();
+        foreach ($_SESSION['store_items'] as $key=>$to_check) {
+            if(isset($_POST["check$key"])) {
+                $to_check->addToCart();
+            }
         }
 
         header("LOCATION: cart.php");
