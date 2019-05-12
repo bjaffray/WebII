@@ -6,6 +6,12 @@
 
     require("filestuff.php");
     readItemFile();
+
+    if(isset($_POST['submit'])) {
+        //writeItemFile();
+
+        header("LOCATION: cart.php");
+    } 
 ?>
 
 <!DOCTYPE html>
