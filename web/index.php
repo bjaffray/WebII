@@ -15,7 +15,7 @@
 
 <?php
 
-require("/week2/navBar.php");
+//require("/week2/navBar.php");
 
 ?>
   
