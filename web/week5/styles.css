@@ -1,63 +1,29 @@
-
 body {
     background-image: url("websitewallpaper.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: whitesmoke;
 }
 
-table {
+
+.firstForm {
     border-collapse: collapse;
     width: 100%;
-    max-width: 50%;
-    margin-left:25%; 
-    margin-right:25%;
-    margin-top: 10%;
+    max-width: 60%;
+    margin-left:20%; 
+    margin-right:20%;
 }
 
-td, th {
-    border: 1px solid #6b6969;
-    background-color: black;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: grey;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-    position: sticky;
-    top: 0;
+.secondForm {
+    border-collapse: collapse;
     width: 100%;
+    max-width: 34%;
+    margin-left:33%; 
+    margin-right:33%;
 }
 
-li {
-    color: whitesmoke;
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #6b6969;
-}
-
-.active {
-    background-color: #6b6969;
-}
-
-.w3-allerta {
-    font-family: "Allerta Stencil", Sans-serif;
-}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
