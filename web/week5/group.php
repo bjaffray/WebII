@@ -3,7 +3,7 @@
 
 
 if(isset($_POST['toUser'])) {
-    header("LOCATION: group.php");
+    header("LOCATION: user.php");
 } 
 
 if(isset($_POST['toEvent'])) {
@@ -51,10 +51,10 @@ if(isset($_POST['toEvent'])) {
 
     <br> <br> <br> <br>
     <div class="w3-bar footer">
-        <input type="submit" name="toUser" style="width:50%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to User Table">
         <input type="submit" name="toEvent" style="width:50%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to Event Table">
+        <input type="submit" name="toUser" style="width:50%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to User Table">
     </div>
 </div> 
 </form>
