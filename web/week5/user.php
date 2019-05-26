@@ -72,12 +72,12 @@ if(isset($_POST['toEvent'])) {
         <?php
             foreach ($db->query('SELECT * FROM public."User"') as $row)
             {
-              echo 'UserID: ' . $row["UserID"];
-              echo 'FirstName: ' . $row["FirstName"];
-              echo 'MidName: ' . $row["MidName"];
-              echo 'LastName: ' . $row["LastName"];
-              echo 'Zip: ' . $row["Zip"];
-              echo '<br/>';
+              echo "<tr>";
+              echo "<td>" . $row["UserID"];
+              echo "<td>" . $row["FirstName"];
+              echo "<td>" . $row["MidName"];
+              echo "<td>" . $row["LastName"];
+              echo "<td>" . $row["Zip"];
             }
         ?>
 
