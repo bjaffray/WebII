@@ -67,7 +67,7 @@ if(isset($_POST['toUser'])) {
         </tr>
 
         <?php
-            foreach ($db->query('SELECT * FROM public."User"') as $row)
+            foreach ($db->query('SELECT * FROM public."Event"') as $row)
             {
               echo "<tr>";
               echo "<td>" . $row["EventID"];
