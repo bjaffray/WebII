@@ -2,6 +2,31 @@
 
 
 
+
+try
+{
+  $dbUrl = getenv('DATABASE_URL');
+
+  $dbOpts = parse_url($dbUrl);
+
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
+
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
+
+
+
 if(isset($_POST['toGroup'])) {
     header("LOCATION: group.php");
 } 
@@ -22,7 +47,7 @@ if(isset($_POST['toEvent'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    <title>See Database information</title>
+    <title>Read Access to Database</title>
 </head>
 
 
@@ -45,7 +70,15 @@ if(isset($_POST['toEvent'])) {
         </tr>
 
         <?php
-        // We need php calling the database and filling the info
+            foreach ($db->query('SELECT * FROM public."User"') as $row)
+            {
+              echo 'UserID: ' . $row["UserID"];
+              echo 'FirstName: ' . $row["FirstName"];
+              echo 'MidName: ' . $row["MidName"];
+              echo 'LastName: ' . $row["LastName"];
+              echo 'Zip: ' . $row["Zip"];
+              echo '<br/>';
+            }
         ?>
 
     </table>
