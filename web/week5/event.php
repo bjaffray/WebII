@@ -1,5 +1,26 @@
 <?php
 
+try
+{
+  $dbUrl = getenv('DATABASE_URL');
+
+  $dbOpts = parse_url($dbUrl);
+
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
+
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
 
 
 if(isset($_POST['toGroup'])) {
@@ -46,7 +67,16 @@ if(isset($_POST['toUser'])) {
         </tr>
 
         <?php
-        // We need php calling the database and filling the info
+            foreach ($db->query('SELECT * FROM public."User"') as $row)
+            {
+              echo "<tr>";
+              echo "<td>" . $row["EventID"];
+              echo "<td>" . $row["GroupID"];
+              echo "<td>" . $row["UserID"];
+              echo "<td>" . $row["Zip"];
+              echo "<td>" . $row["Classification"];
+              echo "<td>" . $row["Date"];
+            }
         ?>
 
     </table>
