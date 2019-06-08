@@ -13,7 +13,7 @@
 <body>
 
 
-<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin">
+<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
     <span class="w3-xxxlarge w3-allerta"> Looking For Group Finder </span>
 </div> 
 
@@ -21,7 +21,7 @@
     
 
 
-    <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+    <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center w3-border">
 
         <h1>Welcome to the main page for the LFG Finder</h1>
 
@@ -34,12 +34,12 @@
 
     <br> <br> <br> <br>
     <div class="w3-bar footer">
-        <input type="submit" name="makeEvent" style="width:33%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make an Event">
+        <input type="submit" name="makeGorE" style="width:33%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make an Event or Group">
         <input type="submit" name="makeUser" style="width:34%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Register/Login">
-        <input type="submit" name="makeGroup" style="width:33%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make a Group">
+        <input type="submit" name="findGorE" style="width:33%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Find a Event or Group">
     </div>
 </div> 
 </form>
