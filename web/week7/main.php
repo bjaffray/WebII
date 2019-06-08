@@ -18,18 +18,18 @@
 </div> 
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
-    <h1>Welcome to the main page for the LFG Finder</h1>
+    
 
 
     <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
 
+        <h1>Welcome to the main page for the LFG Finder</h1>
 
 
 
 
 
 
-    
     </div>
 
     <br> <br> <br> <br>
