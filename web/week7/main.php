@@ -20,11 +20,23 @@
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     <h1>Welcome to the main page for the LFG Finder</h1>
 
+
+    <div class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+
+
+
+
+
+
+
+    
+    </div>
+
     <br> <br> <br> <br>
     <div class="w3-bar footer">
         <input type="submit" name="makeEvent" style="width:33%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make an Event">
-        <input type="submit" name="makeUser" style="width:33%"
+        <input type="submit" name="makeUser" style="width:34%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Register">
         <input type="submit" name="makeGroup" style="width:33%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make a Group">
