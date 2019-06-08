@@ -64,14 +64,14 @@ require("navBar.php");
         <tr>
           <td> Week 6: </td>
           <td> 
-            <a href="/week2/underCon.html"> Here </a> 
+            <a href="/week7/main.php"> Here </a> 
           </td>
         </tr>
 
         <tr>
           <td> Week 7: </td>
           <td> 
-            <a href="/week2/underCon.html"> Here </a>   
+            <a href="/week7/main.php"> Here </a>   
           </td>
         </tr>
 
