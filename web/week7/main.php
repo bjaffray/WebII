@@ -25,7 +25,7 @@
 
         <h1>Welcome to the main page for the LFG Finder</h1>
 
-
+        <p>This is a is a description paragraph</p>
 
 
 
@@ -37,7 +37,7 @@
         <input type="submit" name="makeEvent" style="width:33%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make an Event">
         <input type="submit" name="makeUser" style="width:34%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Register">
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Register/Login">
         <input type="submit" name="makeGroup" style="width:33%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make a Group">
     </div>
