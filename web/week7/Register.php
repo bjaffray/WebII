@@ -56,7 +56,44 @@ if(isset($_POST['goHome'])) {
 
     <!-- We need a UserName, Password, FirstName, MidName (op), LastName, and Zip to add to the User Table -->
 
-    
+    <label for="usrNm">UserName:</label>
+    <input type="text" name="usrNm" id="usrNm">
+    <label for="pswd">Password:</label>
+    <input type="text" name="pswd" id="pswd">
+
+    <br><br>
+
+    <label for="fName">First Name: </label>
+    <input type="text" name="fName" id="fName">
+    <label for="mName">Middle Name (optional): </label>
+    <input type="text" name="mName" id="mName">
+    <label for="lName">Last Name: </label>
+    <input type="text" name="lName" id="lName">
+
+    <br><br>
+
+    <label for="zip">Zip:</label>
+    <input type="text" name="zip" id="zip">
+
+
+    <!-- Inserting query looks like this
+        INSERT INTO public."User"
+        ("UserName"
+        ,"Password"
+        ,"FirstName"
+        ,"MidName"
+        ,"LastName"
+        ,"Zip")
+        VALUES 
+        ('UserName'
+        ,'Password'
+        ,'Test'
+        ,'Mid'
+        ,'Name'
+        ,1111); -->
+
+
+
 
 
 
