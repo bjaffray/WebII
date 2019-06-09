@@ -46,7 +46,7 @@ if(isset($_POST['goHome'])) {
     header("LOCATION: main.php");
 } 
 
-if(isset($_POST['submit'])) {
+if(isset($_POST['submitReg'])) {
     // INSERT INTO public."User"
     // ("UserName","Password","FirstName","MidName","LastName","Zip")
     // VALUES ('UserName','Password','Test','Mid','Name',1111);
