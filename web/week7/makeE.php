@@ -72,10 +72,12 @@ if(isset($_POST['makeG'])) {
 
     <div class="w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center w3-border">
 
-        <h1>Welcome to the creation page for the LFG Finder</h1>
+        <h1>Welcome to the Event creation page for the LFG Finder</h1>
 
         <p>This is a is a description paragraph</p>
 
+
+        <!-- We need a Name, Zip, and Classification to add to the Group table -->
 
 
 

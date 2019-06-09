@@ -1,5 +1,27 @@
 <?php
 
+try
+{
+  $dbUrl = getenv('DATABASE_URL');
+
+  $dbOpts = parse_url($dbUrl);
+
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
+
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
+
 if(isset($_POST['goHome'])) {
     header("LOCATION: main.php");
 } 
@@ -32,7 +54,10 @@ if(isset($_POST['goHome'])) {
 
     <div class="w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center w3-border">
 
+    <!-- We need a UserName, Password, FirstName, MidName (op), LastName, and Zip to add to the User Table -->
+
     
+
 
 
     <br><br>
