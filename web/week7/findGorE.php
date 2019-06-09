@@ -61,9 +61,7 @@ if(isset($_POST['goHome'])) {
     
     <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
         <tr>
-            <th>EventID</th>
-            <th>GroupID</th>
-            <th>UserID</th>
+            <th>Name</th>
             <th>Zip</th>
             <th>Classification</th>
             <th>Date</th>
@@ -73,9 +71,7 @@ if(isset($_POST['goHome'])) {
             foreach ($db->query('SELECT * FROM public."Event"') as $row)
             {
               echo "<tr>";
-              echo "<td>" . $row["EventID"];
-              echo "<td>" . $row["GroupID"];
-              echo "<td>" . $row["UserID"];
+              echo "<td>" . $row["Name"];
               echo "<td>" . $row["Zip"];
               echo "<td>" . $row["Classification"];
               echo "<td>" . $row["Date"];
