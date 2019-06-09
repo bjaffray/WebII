@@ -1,5 +1,27 @@
 <?php
 
+try
+{
+  $dbUrl = getenv('DATABASE_URL');
+
+  $dbOpts = parse_url($dbUrl);
+
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
+
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
+
 if(isset($_POST['makeGorE'])) {
     header("LOCATION: makeGorE.php");
 } 
@@ -36,18 +58,32 @@ if(isset($_POST['goHome'])) {
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     
+    
+    <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+        <tr>
+            <th>EventID</th>
+            <th>GroupID</th>
+            <th>UserID</th>
+            <th>Zip</th>
+            <th>Classification</th>
+            <th>Date</th>
+        </tr>
 
+        <?php
+            foreach ($db->query('SELECT * FROM public."Event"') as $row)
+            {
+              echo "<tr>";
+              echo "<td>" . $row["EventID"];
+              echo "<td>" . $row["GroupID"];
+              echo "<td>" . $row["UserID"];
+              echo "<td>" . $row["Zip"];
+              echo "<td>" . $row["Classification"];
+              echo "<td>" . $row["Date"];
+            }
+        ?>
 
-    <div class="w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center w3-border">
+    </table>
 
-        <h1>Welcome to the finder page for the LFG Finder</h1>
-
-        <p>This is a is a description paragraph</p>
-
-
-
-
-    </div>
 
     <br> <br> <br> <br>
     <div class="w3-bar footer">
