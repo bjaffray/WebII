@@ -48,12 +48,16 @@ if(isset($_POST['findGorE'])) {
         UserName: <input type="text" name="UserN1" id="UserN1">
 
         Password: <input type="text" name="Pass1" id="Pass1">
+
+        <br>
         
         First Name: <input type="text" name="FName" id="FName">
 
         Mid Name (Optional): <input type="text" name="MName" id="MName">
 
         Last Name: <input type="text" name="LName" id="LName">
+
+        <br>
 
         Zip: <input type="text" name="Zip" id="Zip">
 
@@ -65,7 +69,7 @@ if(isset($_POST['findGorE'])) {
 
         Password: <input type="text" name="Pass2" id="Pass2">
 
-
+        <br><br>
 
 
     </div>
