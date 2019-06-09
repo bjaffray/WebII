@@ -1,6 +1,5 @@
 <?php
 
-
 if(isset($_POST['makeGorE'])) {
     header("LOCATION: makeGorE.php");
 } 

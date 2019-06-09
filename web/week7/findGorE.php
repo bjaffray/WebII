@@ -1,3 +1,20 @@
+<?php
+
+if(isset($_POST['makeGorE'])) {
+    header("LOCATION: makeGorE.php");
+} 
+
+if(isset($_POST['makeUser'])) {
+    header("LOCATION: login.php");
+}
+
+if(isset($_POST['goHome'])) {
+    header("LOCATION: main.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,8 +55,8 @@
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make an Event or Group">
         <input type="submit" name="makeUser" style="width:34%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Register/Login">
-        <input type="submit" name="findGorE" style="width:33%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Find a Event or Group">
+        <input type="submit" name="goHome" style="width:33%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to Homepage">
     </div>
 </div> 
 </form>
