@@ -58,6 +58,9 @@ if(isset($_POST['goHome'])) {
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     
+    <div class="w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
+        <span class="w3-xxxlarge w3-allerta"> Events: </span>
+    </div> 
     
     <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
         <tr>
@@ -75,6 +78,29 @@ if(isset($_POST['goHome'])) {
               echo "<td>" . $row["Zip"];
               echo "<td>" . $row["Classification"];
               echo "<td>" . $row["Date"];
+            }
+        ?>
+
+    </table>
+
+    <div class="w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
+        <span class="w3-xxxlarge w3-allerta"> Groups: </span>
+    </div> 
+    
+    <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
+        <tr>
+            <th>Name</th>
+            <th>Zip</th>
+            <th>Classification</th>
+        </tr>
+
+        <?php
+            foreach ($db->query('SELECT * FROM public."Group"') as $row)
+            {
+              echo "<tr>";
+              echo "<td>" . $row["Name"];
+              echo "<td>" . $row["Zip"];
+              echo "<td>" . $row["Classification"];
             }
         ?>
 
