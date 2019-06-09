@@ -22,7 +22,45 @@ catch (PDOException $ex)
   die();
 }
 
+function insertUser($usrNm, $pswd, $fName, $mName, $lName, $zip) {
+    // prepare statement for insert
+    $sql = 'INSERT INTO public."User"("UserName","Password","FirstName","MidName","LastName","Zip") VALUES(:usrNm, :pswd, :fName, :mName, :lName, :zip)';
+    $stmt = $this->pdo->prepare($sql);
+    
+    // pass values to the statement
+    $stmt->bindValue(':usrNm', $usrNm);
+    $stmt->bindValue(':pswd', $pswd);
+    $stmt->bindValue(':fName', $fName);
+    $stmt->bindValue(':mName', $mName);
+    $stmt->bindValue(':lName', $lName);
+    $stmt->bindValue(':zip', $zip);
+    
+    // execute the insert statement
+    $stmt->execute();
+    
+    // return generated id
+    return $this->pdo->lastInsertId('user_id_seq');
+}
+
 if(isset($_POST['goHome'])) {
+    header("LOCATION: main.php");
+} 
+
+if(isset($_POST['submit'])) {
+    // INSERT INTO public."User"
+    // ("UserName","Password","FirstName","MidName","LastName","Zip")
+    // VALUES ('UserName','Password','Test','Mid','Name',1111);
+
+    $usrName = htmlentities($_POST['usrNm']);
+    $pswd = htmlentities($_POST['pswd']);
+    $fName = htmlentities($_POST['fName']);
+    $mName = htmlentities($_POST['mName']);
+    $lName = htmlentities($_POST['lName']);
+    $zip = htmlentities($_POST['zip']);
+
+    insertUser($usrNm, $pswd, $fName, $mName, $lName, $zip);
+
+
     header("LOCATION: main.php");
 } 
 
@@ -80,28 +118,6 @@ if(isset($_POST['goHome'])) {
 
     <label for="zip">Zip:</label>
     <input type="text" name="zip" id="zip">
-
-
-    <!-- Inserting query looks like this
-        INSERT INTO public."User"
-        ("UserName"
-        ,"Password"
-        ,"FirstName"
-        ,"MidName"
-        ,"LastName"
-        ,"Zip")
-        VALUES 
-        ('UserName'
-        ,'Password'
-        ,'Test'
-        ,'Mid'
-        ,'Name'
-        ,1111); -->
-
-
-
-
-
 
     <br><br>
 
