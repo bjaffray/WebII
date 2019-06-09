@@ -26,10 +26,6 @@ if(isset($_POST['goHome'])) {
     header("LOCATION: main.php");
 } 
 
-if(isset($_POST['makeUser'])) {
-    header("LOCATION: login.php");
-}
-
 if(isset($_POST['findGorE'])) {
     header("LOCATION: findGorE.php");
 }
@@ -51,6 +47,7 @@ if(isset($_POST['findGorE'])) {
 
 <body>
 
+
 <div class="w3-bar w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
     <span class="w3-bar-item w3-xxxlarge w3-allerta"> Looking For Group Finder </span>
 
@@ -62,7 +59,8 @@ if(isset($_POST['findGorE'])) {
     // Else display login stuff
     require("loginBar.php");
 
-?>
+    ?>
+</div> 
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     

@@ -24,10 +24,6 @@ catch (PDOException $ex)
 
 if(isset($_POST['makeGorE'])) {
     header("LOCATION: makeGorE.php");
-} 
-
-if(isset($_POST['makeUser'])) {
-    header("LOCATION: login.php");
 }
 
 if(isset($_POST['goHome'])) {
@@ -62,7 +58,8 @@ if(isset($_POST['goHome'])) {
     // Else display login stuff
     require("loginBar.php");
 
-?>
+    ?>
+</div> 
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     
