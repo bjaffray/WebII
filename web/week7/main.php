@@ -1,5 +1,7 @@
 <?php
 
+$_SESSION['logged'] = false;
+
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -38,6 +40,10 @@ if(isset($_POST['register'])) {
     header("LOCATION: Register.php");
 }
 
+if(isset($_POST['register'])) {
+    header("LOCATION: Register.php");
+}
+
 ?>
 
 
@@ -62,9 +68,16 @@ if(isset($_POST['register'])) {
     <?php
 
     // If logged in then show "Welcome $Name"
-
+    if($_SESSION['loggedin'])
+    {
+        echo "<div class=\"w3-bar-item w3-margin-top\" style=\"position: absolute; right: 0;\">";
+        echo "Welcome Name...";
+    }
     // Else display login stuff
-    require("loginBar.php");
+    else
+    {
+        require("loginBar.php");
+    }
 
     ?>
 </div> 
