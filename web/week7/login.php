@@ -55,7 +55,7 @@ if(isset($_POST['regAccount'])) {
         <br><br>
 
         <input type="submit" name="regAccount"
-            class="w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Register">
+            class="w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" value="Register">
 
 
     </div>

@@ -32,6 +32,14 @@ if(isset($_POST['goHome'])) {
 
     <div class="w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center w3-border">
 
+
+
+
+    <br><br>
+
+    <input type="submit" name="submitReg"
+            class="w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large" value="Submit">
+
     </div>
 
     <br> <br> <br> <br>
