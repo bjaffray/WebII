@@ -51,10 +51,18 @@ if(isset($_POST['goHome'])) {
 
 <body>
 
+<div class="w3-bar w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
+    <span class="w3-bar-item w3-xxxlarge w3-allerta"> Looking For Group Finder </span>
 
-<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
-    <span class="w3-xxxlarge w3-allerta"> Looking For Group Finder </span>
-</div> 
+
+    <?php
+
+    // If logged in then show "Welcome $Name"
+
+    // Else display login stuff
+    require("loginBar.php");
+
+?>
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     

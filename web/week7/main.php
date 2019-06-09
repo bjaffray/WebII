@@ -29,7 +29,6 @@ if(isset($_POST['register'])) {
 
 <body>
 
-
 <div class="w3-bar w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
     <span class="w3-bar-item w3-xxxlarge w3-allerta"> Looking For Group Finder </span>
 
