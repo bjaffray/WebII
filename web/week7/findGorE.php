@@ -58,8 +58,8 @@ if(isset($_POST['goHome'])) {
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
     
-    <div class="w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
-        <span class="w3-xxxlarge w3-allerta"> Events: </span>
+    <div class="w3-container w3-dark-grey w3-round-medium w3-margin">
+        <span class="w3-xlarge w3-allerta"> Events: </span>
     </div> 
     
     <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
@@ -83,8 +83,8 @@ if(isset($_POST['goHome'])) {
 
     </table>
 
-    <div class="w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
-        <span class="w3-xxxlarge w3-allerta"> Groups: </span>
+    <div class="w3-container w3-dark-grey w3-round-medium w3-margin">
+        <span class="w3-xlarge w3-allerta"> Groups: </span>
     </div> 
     
     <table class="w3-table w3-hoverable w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center">
