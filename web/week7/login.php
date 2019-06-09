@@ -12,6 +12,10 @@ if(isset($_POST['findGorE'])) {
     header("LOCATION: findGorE.php");
 }
 
+if(isset($_POST['regAccount'])) {
+    header("LOCATION: Register.php");
+}
+
 ?>
 
 
@@ -50,7 +54,7 @@ if(isset($_POST['findGorE'])) {
 
         <br><br>
 
-        <input type="submit" name="Register"
+        <input type="submit" name="regAccount"
             class="w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Register">
 
 
