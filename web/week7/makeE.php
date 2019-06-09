@@ -30,6 +30,10 @@ if(isset($_POST['findGorE'])) {
     header("LOCATION: findGorE.php");
 }
 
+if(isset($_POST['makeG'])) {
+    header("LOCATION: makeG.php");
+}
+
 ?>
 
 
@@ -81,10 +85,10 @@ if(isset($_POST['findGorE'])) {
     <div class="w3-bar footer">
         <input type="submit" name="goHome" style="width:33%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to Homepage">
-        <input type="submit" name="makeUser" style="width:34%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Register/Login">
-        <input type="submit" name="findGorE" style="width:33%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Find a Event or Group">
+        <input type="submit" name="findGorE" style="width:34%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Find an Event or a Group">
+        <input type="submit" name="makeG" style="width:33%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make a Group">
     </div>
 </div> 
 </form>

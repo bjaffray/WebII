@@ -1,19 +1,37 @@
 <?php
 
-if(isset($_POST['makeG'])) {
-    header("LOCATION: makeG.php");
-} 
+try
+{
+  $dbUrl = getenv('DATABASE_URL');
 
-if(isset($_POST['makeE'])) {
-    header("LOCATION: makeE.php");
+  $dbOpts = parse_url($dbUrl);
+
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
+
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
+
+if(isset($_POST['goHome'])) {
+    header("LOCATION: main.php");
 } 
 
 if(isset($_POST['findGorE'])) {
     header("LOCATION: findGorE.php");
 }
 
-if(isset($_POST['register'])) {
-    header("LOCATION: Register.php");
+if(isset($_POST['makeE'])) {
+    header("LOCATION: makeE.php");
 }
 
 ?>
@@ -27,11 +45,12 @@ if(isset($_POST['register'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    <title>Looking For Group Finder</title>
+    <title>Create a group or Event</title>
 </head>
 
 
 <body>
+
 
 <div class="w3-bar w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
     <span class="w3-bar-item w3-xxxlarge w3-allerta"> Looking For Group Finder </span>
@@ -53,19 +72,11 @@ if(isset($_POST['register'])) {
 
     <div class="w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center w3-border">
 
-        <h1>Welcome to the main page for the LFG Finder</h1>
+        <h1>Welcome to the creation page for the LFG Finder</h1>
 
-        <br><br>
+        <p>This is a is a description paragraph</p>
 
-        <p>Welcome to the looking for group finder. This is a site you will be able to look for groups in your local area
-            in order to engage in groups or events that may be taking place in your area. The idea is to join people and 
-            make friends with people who have similar interests and have groups to have a more interesting adult life</p>
 
-        <br><br>
-
-        <img src="lfgpic.png" alt="Looking for group Picture" style="max-width: 500px; max-height: 500px;">
-
-        <br><br>
 
 
     </div>
@@ -76,8 +87,8 @@ if(isset($_POST['register'])) {
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make an Event">
         <input type="submit" name="findGorE" style="width:34%"
             class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Find an Event or a Group">
-        <input type="submit" name="makeG" style="width:33%"
-            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Make a Group">
+        <input type="submit" name="goHome" style="width:33%"
+            class="w3-bar-item w3-button w3-xlarge w3-block w3-btn w3-dark-grey w3-round-large w3-border" value="Go to Homepage">
     </div>
 </div> 
 </form>
