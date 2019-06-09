@@ -1,7 +1,5 @@
 <?php
 
-$_SESSION['logged'] = false;
-
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -42,6 +40,10 @@ if(isset($_POST['register'])) {
 
 if(isset($_POST['register'])) {
     header("LOCATION: Register.php");
+}
+
+if(isset($_POST['login'])) {
+    $_SESSION['logged'] = true;
 }
 
 ?>
