@@ -33,7 +33,7 @@
 
         <br><br>
 
-        <img src="lgfpic.png" alt="Looking for group Picture">
+        <img src="lfgpic.png" alt="Looking for group Picture">
 
         <br><br>
 
