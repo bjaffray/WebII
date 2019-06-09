@@ -42,14 +42,15 @@ if(isset($_POST['findGorE'])) {
 
         <h1>Welcome to the login page for the LFG Finder</h1>
 
+        <br>
+
         <h2>Register:</h2>
         
-
         UserName: <input type="text" name="UserN1" id="UserN1">
 
         Password: <input type="text" name="Pass1" id="Pass1">
 
-        <br>
+        <br><br>
         
         First Name: <input type="text" name="FName" id="FName">
 
@@ -57,11 +58,11 @@ if(isset($_POST['findGorE'])) {
 
         Last Name: <input type="text" name="LName" id="LName">
 
-        <br>
+        <br><br>
 
         Zip: <input type="text" name="Zip" id="Zip">
 
-
+        <br>
 
         <h2>Login:</h2>
 
