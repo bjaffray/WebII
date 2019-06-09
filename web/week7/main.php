@@ -30,12 +30,10 @@ if(isset($_POST['findGorE'])) {
 <body>
 
 
-<div class="w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
-    <span class="w3-xxxlarge w3-allerta"> 
-    
-    Looking For Group Finder 
-    
-    <div class="login-container">
+<div class="w3-bar w3-container w3-dark-grey w3-round-xlarge w3-margin w3-border">
+    <span class="w3-bar-item w3-xxxlarge w3-allerta"> Looking For Group Finder </span>
+
+    <div class="w3-bar-item login-container">
         <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <input type="text" placeholder="Username" name="username">
             <input type="text" placeholder="Password" name="psw">
@@ -43,10 +41,6 @@ if(isset($_POST['findGorE'])) {
             <button type="submit" name="register">Register</button>
         </form>
     </div>
-    
-    </span>
-
-    
 </div> 
 
 <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="firstForm">
