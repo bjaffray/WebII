@@ -56,6 +56,8 @@ if(isset($_POST['goHome'])) {
 
     <!-- We need a UserName, Password, FirstName, MidName (op), LastName, and Zip to add to the User Table -->
 
+    <br><br><br><br>
+
     <label for="usrNm">UserName:</label>
     <input type="text" name="usrNm" id="usrNm">
     <label for="pswd">Password:</label>
@@ -65,8 +67,10 @@ if(isset($_POST['goHome'])) {
 
     <label for="fName">First Name: </label>
     <input type="text" name="fName" id="fName">
+    <br>
     <label for="mName">Middle Name (optional): </label>
     <input type="text" name="mName" id="mName">
+    <br>
     <label for="lName">Last Name: </label>
     <input type="text" name="lName" id="lName">
 
