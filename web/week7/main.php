@@ -33,7 +33,7 @@
 
         <br><br>
 
-        <img src="lfgpic.png" alt="Looking for group Picture">
+        <img src="lfgpic.png" alt="Looking for group Picture" style="max-width: 250px; max-height: 250px;">
 
         <br><br>
 
