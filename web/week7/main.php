@@ -25,9 +25,17 @@
 
         <h1>Welcome to the main page for the LFG Finder</h1>
 
-        <p>This is a is a description paragraph</p>
+        <br><br>
 
+        <p>Welcome to the looking for group finder. This is a site you will be able to look for groups in your local area
+            in order to engage in groups or events that may be taking place in your area. The idea is to join people and 
+            make friends with people who have similar interests and have groups to have a more interesting adult life</p>
 
+        <br><br>
+
+        <img src="lgfpic.png" alt="Looking for group Picture">
+
+        <br><br>
 
 
     </div>
