@@ -6,13 +6,14 @@ CREATE SEQUENCE user_id_seq;
 
 CREATE TABLE public."User"
 ("UserID"       INTEGER DEFAULT NEXTVAL('user_id_seq')
-,"UserName"     VARCHAR(30)     NOT NULL
+,"UserName"     VARCHAR(30)
 ,"Password"     VARCHAR(30)     NOT NULL
 ,"FirstName"    VARCHAR(30)     NOT NULL
 ,"MidName"      VARCHAR(30)
 ,"LastName"     VARCHAR(30)     NOT NULL
 ,"Zip"          INTEGER         NOT NULL
-,CONSTRAINT "user_pk_01" PRIMARY KEY ("UserID"))
+,CONSTRAINT "user_pk_01" PRIMARY KEY ("UserID")
+,UNIQUE ("UserName"))
 WITH (OIDS = FALSE)
 TABLESPACE pg_default;
 
