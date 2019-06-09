@@ -4,12 +4,12 @@ if(isset($_POST['makeGorE'])) {
     header("LOCATION: makeGorE.php");
 } 
 
-if(isset($_POST['makeUser'])) {
-    header("LOCATION: login.php");
-}
-
 if(isset($_POST['findGorE'])) {
     header("LOCATION: findGorE.php");
+}
+
+if(isset($_POST['register'])) {
+    header("LOCATION: Register.php");
 }
 
 ?>
