@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    <title>Looking For Group Finder</title>
+    <title>Login/Register</title>
 </head>
 
 
@@ -23,7 +23,7 @@
 
     <div class="w3-container w3-dark-grey w3-round-xlarge w3-allerta w3-center w3-border">
 
-        <h1>Welcome to the main page for the LFG Finder</h1>
+        <h1>Welcome to the login page for the LFG Finder</h1>
 
         <p>This is a is a description paragraph</p>
 
