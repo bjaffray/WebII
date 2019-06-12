@@ -34,6 +34,10 @@ if(isset($_POST['makeG'])) {
     header("LOCATION: makeG.php");
 }
 
+if(isset($_POST['register'])) {
+    header("LOCATION: Register.php");
+}
+
 ?>
 
 

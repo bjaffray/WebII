@@ -34,6 +34,10 @@ if(isset($_POST['goHome'])) {
     header("LOCATION: main.php");
 }
 
+if(isset($_POST['register'])) {
+    header("LOCATION: Register.php");
+}
+
 ?>
 
 

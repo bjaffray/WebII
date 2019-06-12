@@ -22,9 +22,13 @@ catch (PDOException $ex)
   die();
 }
 
-function insertUser($usrNm, $pswd, $fName, $mName, $lName, $zip) {
+function insertUser($usrNm, $pswd, $fName, $mName, $lName, $zip, $midOn) {
     // prepare statement for insert
-    $sql = 'INSERT INTO public."User"("UserName","Password","FirstName","MidName","LastName","Zip") VALUES(:usrNm, :pswd, :fName, :mName, :lName, :zip)';
+    if ($midOn)
+        $sql = 'INSERT INTO public."User"("UserName","Password","FirstName","MidName","LastName","Zip") VALUES(:usrNm, :pswd, :fName, :mName, :lName, :zip)';
+    else 
+        $sql = 'INSERT INTO public."User"("UserName","Password","FirstName","LastName","Zip") VALUES(:usrNm, :pswd, :fName, :lName, :zip)';
+
     $stmt = $this->pdo->prepare($sql);
     
     // pass values to the statement
@@ -58,7 +62,8 @@ if(isset($_POST['submitReg'])) {
     $lName = htmlentities($_POST['lName']);
     $zip = htmlentities($_POST['zip']);
 
-    insertUser($usrNm, $pswd, $fName, $mName, $lName, $zip);
+    // Put in the 0/1 for midname
+    insertUser($usrNm, $pswd, $fName, $mName, $lName, $zip, true);
 
 
     header("LOCATION: main.php");
